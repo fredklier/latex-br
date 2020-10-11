@@ -1,0 +1,321 @@
+\documentclass[a4paper,addpoints]{exam}
+\usepackage[right=0.75cm, left=0.75cm, top=0.75cm, bottom=1.5cm]{geometry}
+\usepackage[utf8]{inputenc} % para acentos
+\usepackage{amsmath, amsfonts, amssymb} %para forrmas matemáticas
+\usepackage{graphicx} %pacote para o uso de figuras
+\usepackage[portuguese]{babel} %para os rótulos automáticos fiquem em português
+\usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{fourier} %transforma a fonte utilizada no latex
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{chemfig}
+\usepackage{isotope}%para escrever os isótopos
+\usepackage[version=4]{mhchem} %bioquímica
+\usepackage{chemformula} %fórmula químicas
+\usepackage{xymtexpdf}%PDF Mode para moléculas complexas
+\usepackage{epic,carom} %pacote do colesterol
+\usepackage{xymtex}
+\usepackage{mol2chemfig} %pacote para moléculas complexas
+
+\let\substfont\sffamily
+\renewcommand*\printatom[1]{\ensuremath{\mathsf{#1}}}
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{main}
+\pgfsetlayers{background,main}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%dados da prova
+\author{Fred Klier}
+\newcommand{\class}{Química}
+\newcommand{\term}{2020}
+\newcommand{\examnum}{Prova II de Química}
+\newcommand{\examdate}{\today}
+\newcommand{\timelimit}{90 minutos}
+\newcommand{\examauthor}{Fred Klier}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%cabeçalho e rodapé
+\pagestyle{headandfoot}
+\firstpageheader{}{}{}
+\runningheader{}{}{}
+\firstpagefooter{\class}{\examnum\ - Page \thepage\ of \numpages}{\term}
+\firstpagefootrule
+\runningfooter{\class}{\examnum\ - Page \thepage\ of \numpages}{\term}
+\runningfootrule
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Início do cabeçalho
+
+\begin{document}
+	
+	\begin{tikzpicture}[remember picture, overlay] %remember picture permite chamar nodes que não estão no mesmo ambiente tikzpicture e overlay permite passar as margens definidas.
+	
+	\node(logo) at (current page.north east) [anchor=north east,xshift=-0.25cm, yshift=-0.5cm] {\includegraphics[width=6cm]{cnsm.png}};
+	
+	\node(nomealuno) at (logo.north west) [anchor=north east]{{\textbf{Nome:}}{\makebox[11cm]{\hrulefill}\textbf{Nº:}}{\makebox[1cm]{\hrulefill}}};
+	
+	\node(nota) at (logo.north west) [anchor=north east,xshift=-0.01cm, yshift=-0.5cm]{\textbf{Nota:}{\makebox[1cm]{\hrulefill}}};
+	
+	\node(dataprova) at (logo.north west) [anchor=north east,xshift=-0.01cm, yshift=-1cm]{Data da prova:{\makebox[.79cm]{}}{\makebox[0.6cm]{\hrulefill}}/{\makebox[0.6cm]{\hrulefill}}/\term};
+	
+	\node(datadev) at (logo.north west) [anchor=north east,xshift=-0.01cm, yshift=-1.6cm]{Data da devolução:{\makebox[.1cm]{}}{{\makebox[0.6cm]{\hrulefill}}/{\makebox[0.6cm]{\hrulefill}}/\term}};
+	
+	\node(valor) at (nota.north west) [anchor=north east,xshift=0cm, yshift=0cm] {\textbf{Valor: \numpoints} {\makebox[1.7cm]{}}};
+	
+	\node(turma) at (nota.north west) [anchor=north east,xshift=-7.94cm, yshift=0cm]{2º Ano do Ensino médio};
+	
+	\node(prova) at (turma.south west) [anchor=north west,xshift=0cm, yshift=-.1cm]{\examnum};
+	
+	\node(professor) at (datadev.north west) [anchor=north east,xshift=-4.8cm, yshift=0cm]{Professor(a): \examauthor};
+	
+	
+	\end{tikzpicture}
+	
+	\vspace{1.1cm}
+	
+	\begin{table*}[h!]	
+		\begin{tabularx}{19.5cm}{cX} %se eu coloco 20cm fica bom no papel mas ele fala que está muito cheio. overflow \hbox
+			\cline{1-2}
+			\multirow{9}{*}{\textbf{Atenção:}} & {Preencha o cabeçalho corretamente.} \\
+			& {Leia atentamente as questões (em silêncio) e não faça perguntas. A interpretação faz parte da prova.}  \\
+			& {Para respostas definitivas use somente caneta (tinta azul ou preta). Respostas a lápis serão anuladas.} \\
+			& {Não se levante do lugar. Não peça materiais emprestados e não converse.} \\
+			& {Evite rasuras. Não use corretivo.} \\
+			& {Questões objetivas rasuradas serão desconsideradas.} \\
+			& {O aluno só poderá entregar a avaliação após 40 minutos do início da mesma.} \\
+			& Só é permitido o uso da tabela fornecida na prova.\\ 
+			&Esta prova possui \numpages\ páginas e \numquestions\ questões.\\
+			& O tempo de prova é de \timelimit\\
+			 \cline{1-2}
+		\end{tabularx}
+	\end{table*}
+
+% fim do cabeçalho	
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+
+
+\begin{multicols}{2} %questões em várias colunas
+	
+\begin{questions}
+\addpoints	
+\question[10]
+
+
+\question[10] Ao analisarmos, na mesma temperatura, três líquidos conhecidos: água, etanol e éter etílico. Obtemos a seguinte tabela:
+
+\begin{tabular}{ |c|c|c| } 
+	\hline
+	Líquido & Temperatura & Pressão de vapor \\ \hline
+	Água & $20^{\circ}C$ & $17,5 \ mmHg$ \\ \hline
+	Etanol & $20^{\circ}C$ & $43,9 \ mmHg$ \\ \hline
+	Éter etílico & $20^{\circ}C$ & $442,2 \ mmHg$ \\
+	\hline
+\end{tabular}
+
+A partir das informações fornecidas na tabela, podemos afirmar que no gráfico:
+\begin{center}
+\begin{tikzpicture}[line width=1pt, scale=1]
+	\draw[<->] (0,3) -- (0,0) -- (4,0);
+	\draw[xshift=-8mm, red]  (1,0.5) .. controls (3,0.5) and (2.8,2.5) .. (2.8,2.5);
+	\node [above] at (1.97,2.5) {$A$};
+	\draw[xshift=-5mm]  (1.2,0.5) .. controls (3,0.5) and (3,2.5) .. (3,2.5);
+	\node [above] at (2.45,2.5) {$B$};
+	\draw [green] (1.2,0.5) .. controls (3,0.5) and (3,2.5) .. (3,2.5); 
+	\node [above] at (2.95,2.5) {$C$};
+	%\draw[loosely dashed] (2.95,0) -- (2.95,2);
+	%\node [below] at (2.95,0) {$T_4$};
+	%\draw[loosely dashed] (2.45,0) -- (2.45,2);
+	%\node [below] at (2.45,0) {$T_3$};
+	\draw[loosely dashed] (1.97,0) -- (1.97,2);
+	\node [below] at (1.97,0) {$T_2$};
+	%\draw[loosely dashed] (1.52,0) -- (1.52,2);
+	%\node [below] at (1.52,0) {$T_1$};
+	\draw[loosely dashed] (0,2) -- (1.97,2);
+	\node [left] at (0,2) {$P_1$};
+	\draw[loosely dashed] (0,1.5) -- (1.97,1.5);
+	\node [left] at (0,1.5) {$P_2$};
+	\draw[loosely dashed] (0,1) -- (1.97,1);
+	\node [left] at (0,1) {$P_3$};
+	\node(pressvap) at (0,0) [anchor=south west,xshift=-0.5cm, yshift=0.1cm, rotate=90] {Pressão de vapor};
+	\node(temp) at (0,0) [anchor=north west,xshift=0.75cm, yshift=-0.5cm] {Temperatura};	
+\end{tikzpicture}
+\end{center}
+Responda:
+
+{
+	\renewcommand*\thechoice{\Roman{choice}} 
+	\renewcommand*\choicelabel{\thechoice)}
+	\begin{choices}
+		\choice Qual das letras no gráfico corresponde a cada substância?
+		\choice Qual das substâncias tem maior ponto de ebulição?
+		\choice Qual delas tem o menor ponto de ebulição?
+	\end{choices}
+}
+
+{
+\renewcommand*\thechoice{\alph{choice}} 
+\renewcommand*\choicelabel{\thechoice)}
+%
+	Compare a água do mar com água potável em relação:
+%	
+\begin{choices}
+	\choice às volatilidades;
+	\choice às temperaturas de ebulição;
+	\choice às temperaturas de congelação.
+\end{choices}
+}
+
+
+	\question[20] Questão simples.
+{\fontsize{0.1cm}{1em}\selectfont This is big!}
+
+\begin{tikzpicture}[scale=1]
+	\draw [<->] (0,4) -- (0,0) -- (4,0);
+	\node [left] at (0,4) {$V_{mol*seg^-1}$};
+	\node [below] at (4,0) {$T_{(seg)}$};
+	\draw[very thick] (0,0) to [out=70,in=180] (1.5,1.5);
+	\draw[very thick, green] (0,3.75) to [out=280,in=180] (1.5,1.5);
+	\draw[very thick, red] (1.5,1.5) -- (3,1.5);
+	\draw[dotted, thick, gray] (.5,0) -- (.5,2);
+	\node [below] at (0.5,0) {$t_1$};
+	\draw[dotted, thick, gray] (1.5,0) -- (1.5,1.5);
+	\node [below] at (1.5,0) {$t_2$};
+\end{tikzpicture}
+
+
+\addpoints
+\makeemptybox{2cm}
+
+\question[20] Questão com mais de uma pergunta
+\noaddpoints % to omit double points count
+\begin{parts}
+	\part[5] faça 1.
+	\fillwithlines{8em}
+	\part[15] faça 2.
+	\fillwithdottedlines{8em}
+\end{parts}
+
+
+\addpoints
+\question[10] O elemento que possui $Z=92$ é:
+\begin{multicols}{3}
+	\begin{choices}
+		\choice H
+		\choice O
+		\choice F
+		\choice S
+		\choice Ba
+		\choice Pb
+		\choice U
+		\choice Pu 🐷
+	\end{choices}
+\end{multicols}
+
+\question[10] multipla escolha em várias linhas
+\begin{choices}
+	\choice 1
+	\choice 2
+	\choice 3
+	\choice 4
+	\choice 5
+\end{choices}
+
+\question[10] múltipla escolha em uma linha\\
+\begin{oneparchoices}
+	\choice 1
+	\choice 2
+	\choice 3
+	\choice 4
+	\choice 5
+\end{oneparchoices}
+
+\question[10] Marque as afirmações verdadeiras.
+\addpoints
+\begin{checkboxes}
+	\choice um
+	\choice dois
+	\choice três
+	\choice quatro
+\end{checkboxes}
+
+{%
+	\checkboxchar{$\Box$} % changing checkbox style locally
+	\question[10] Marque as afirmações verdadeiras.
+	\addpoints
+	\begin{checkboxes}
+		\choice um
+		\choice dois
+		\choice três
+	\end{checkboxes}
+}%
+
+{%\renewcommand\choicelabel{\alph{choice}} outra opção com letras minúsculas \arabic para números \roman para numeros romanos
+	%colocar a primeira letra maiúscula para ficar maiúsculo.
+	%\renewcommand\choicelabel{(\thechoice)} colocar entre parênteses, o que colocar em volta do \thechoice vai ficar em volta da opção.
+	% changing choice items style locally
+	\renewcommand*\thechoice{\Roman{choice}}
+	\renewcommand*\choicelabel{(\thechoice)}
+	%
+	\question[10] O elemento que possui $Z=92$ é:
+	\begin{multicols}{3}
+		\begin{choices}
+			\choice H
+			\choice O
+			\choice F
+			\choice S
+			\choice Ba
+			\choice Pb
+			\choice U
+			\choice Pu
+		\end{choices}
+	\end{multicols}
+}%
+
+
+\question[10]
+Explanação sobre\ldots
+\makeemptybox{2cm}
+
+\question[10] Choose\textbf{ exactly one} from the following problems to solve. 
+\begin{parts} 
+	\part The length of a rectangular garden is $9$\textit{m} longer than its width. If the garden's perimeter is  $182$\textit{m}, what is the area of the garden in square feet? Make a model to illustrate your answer. 
+	\vspace{0.1in}
+	\part The difference of two numbers is 3. The difference of the squares of the same two numbers is $51$. Find the two numbers. 
+\end{parts}
+
+
+
+{%
+	% changing choice items style locally
+	\renewcommand*\thechoice{\arabic{choice}} 
+	\renewcommand*\choicelabel{\thechoice)}
+	%
+	\question[10] Element with $Z=92$ is:
+	\begin{multicols}{2}
+		\begin{choices}
+			\choice H
+			\choice O
+			\choice F
+			\choice S
+			\choice Ba
+			\choice Pb
+			\choice U
+			\choice Pu
+		\end{choices}
+	\end{multicols}
+}%	
+
+
+
+
+
+
+\end{questions}
+\end{multicols}
+
+\end{document}
