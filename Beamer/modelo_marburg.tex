@@ -1,0 +1,103 @@
+\documentclass{beamer}
+\usepackage{pgfopts, etoolbox, calc, ifxetex, ifluatex} %pacotes para o metropolis
+\usepackage{amsmath, amsfonts, amssymb} %para forrmas matemáticas
+\usepackage{graphicx} %pacote para o uso de figuras
+\usepackage[portuguese]{babel} %para os rótulos automáticos fiquem em português
+\usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{chemfig}
+\usepackage{isotope}%para escrever os isótopos
+\usepackage[version=4]{mhchem} %fórmulas químicas e reações químicas com \ce
+\usepackage{chemformula} %fórmula químicas com \ch 
+\usepackage{elements} %para a distribuição eletrônica.
+\usepackage{xymtexpdf}%PDF Mode para moléculas complexas
+\usepackage{epic,carom} %pacote do colesterol
+\usepackage{xymtex} %desenha fórmulas químicas estruturais
+\usepackage{enumitem} %para trocar os rótulos dos itens
+\usepackage{siunitx} %para usar unidades do sistema intenacional
+\usepackage{mathrsfs} %letras para notações matemática
+\usepackage{xfrac} %para ter opções com frações (sfrac)
+\usepackage{rotating} %para rodar o texto
+
+\usetheme[progressbar=frametitle]{Marburg} %
+%\setbeamertemplate{frame numbering}[fraction] % as contagem dos slides.
+%\usecolortheme{lily}
+
+
+\title[Beamer]{Apresentação em Beamer}
+\subtitle[Alt]{Uma nova alternativa}
+\author[Fred Klier]{Carlos Frederico Gitsio Klier Teixeira da Silva}
+\institute{Colégio Nossa Senhora Medianeira}
+\date[dd/mm/yyyy]{\today}
+
+\begin{document}
+\begin{frame}
+\maketitle
+\end{frame}
+
+
+\begin{frame}[t]{Introdução}
+\section{primeira}
+\begin{multicols}{2}	
+	\begin{enumerate}[label=\alph*)]
+	\item um 
+	\item dois
+	\end{enumerate}
+	\columnbreak
+	\begin{tikzpicture}[scale=0.5]
+	\draw [<->] (0,5) -- (0,0) -- (5,0);
+	\node [left] at (0,5) {$P_{(atm)}$};
+	\node [below] at (5,0) {$T_{(K)}$};
+	\draw[dotted] (0,0) grid [step=.5] (4.5,4.5);
+	\draw[very thick] (0.2,0.2) to [out=40,in=240] (2,2);
+	\draw[very thick] (2,2) to [out=20,in=270] (4,4);
+	\draw[very thick] (2,2) to [out=120,in=300] (1,4);
+	\end{tikzpicture}
+	\end{multicols}
+\end{frame}
+
+
+\begin{frame}{Definição}
+	\section{Definição}
+	\begin{block}{definição}
+	um momento para se pensar.
+	\end{block}
+\end{frame}
+
+
+\begin{frame}{Foto}
+\section{Foto}
+\begin{multicols}{2}	
+	\begin{enumerate}[label=\alph*)]
+	\item um 
+	\item dois
+	\end{enumerate}
+	\columnbreak
+	\includegraphics[width=4cm]{cnsm.png}
+	
+	\end{multicols}
+\end{frame}
+
+\begin{frame}{itens}
+
+\begin{itemize}
+\item uma coisa
+\item outra coisa
+\end{itemize}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
