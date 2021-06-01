@@ -1,0 +1,87 @@
+\documentclass[a4paper,12]{exam}
+\usepackage[right=0.75cm, left=0.75cm, top=0.75cm, bottom=1.5cm]{geometry}
+\usepackage[utf8]{inputenc} % para acentos
+\usepackage{amsmath, amsfonts, amssymb} %para forrmas matemáticas
+\usepackage{graphicx} %pacote para o uso de figuras
+\usepackage[portuguese]{babel} %para os rótulos automáticos fiquem em português
+\usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{fourier} %transforma a fonte utilizada no latex
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
+\usepackage{chemformula}
+\usepackage{xymtexpdf}%PDF Mode
+\usepackage{epic,carom} %pacote do colesterol
+%\usepackage{stree}
+\usepackage{xymtex}
+\let\substfont\sffamily
+\renewcommand*\printatom[1]{\ensuremath{\mathsf{#1}}}
+
+
+\author{Fred Klier}
+\newcommand{\class}{Química}
+\newcommand{\term}{2020}
+\newcommand{\examnum}{Prova II de Química}
+\newcommand{\examdate}{\today}
+\newcommand{\timelimit}{90 minutos}
+\newcommand{\examauthor}{Fred Klier}
+
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{main}
+
+\pgfsetlayers{background,main}
+
+\pagestyle{headandfoot}
+\firstpageheader{}{}{}
+\runningheader{}{}{}
+\firstpagefooter{\class}{\examnum\ - Page \thepage\ of \numpages}{\term}
+\firstpagefootrule
+\runningfooter{\class}{\examnum\ - Page \thepage\ of \numpages}{\term}
+\runningfootrule
+
+\begin{document}
+
+\begin{tikzpicture}[remember picture, overlay] %remember picture permite chamar nodes que não estão no mesmo ambiente tikzpicture e overlay permite passar as margens definidas.
+
+	\node(logo) at (current page.north east) [anchor=north east,xshift=-0.25cm, yshift=-0.5cm] {\includegraphics[width=6cm]{cnsm.png}};
+	
+	\node(nomealuno) at (logo.north west) [anchor=north east]{{\textbf{Nome:}}{\makebox[11cm]{\hrulefill}\textbf{Nº:}}{\makebox[1cm]{\hrulefill}}};
+	
+	\node(nota) at (logo.north west) [anchor=north east,xshift=-0.01cm, yshift=-0.5cm]{\textbf{Nota:}{\makebox[1cm]{\hrulefill}}};
+	
+	\node(dataprova) at (logo.north west) [anchor=north east,xshift=-0.01cm, yshift=-1cm]{Data da prova:{\makebox[.79cm]{}}{\makebox[0.6cm]{\hrulefill}}/{\makebox[0.6cm]{\hrulefill}}/\term};
+	
+	\node(datadev) at (logo.north west) [anchor=north east,xshift=-0.01cm, yshift=-1.6cm]{Data da devolução:{\makebox[.1cm]{}}{{\makebox[0.6cm]{\hrulefill}}/{\makebox[0.6cm]{\hrulefill}}/\term}};
+	
+	\node(valor) at (nota.north west) [anchor=north east,xshift=0cm, yshift=0cm] {\textbf{Valor: 30} {\makebox[1.7cm]{}}};
+	
+	\node(turma) at (nota.north west) [anchor=north east,xshift=-7.94cm, yshift=0cm]{2º Ano do Ensino médio};
+	
+	\node(prova) at (turma.south west) [anchor=north west,xshift=0cm, yshift=-.1cm]{\examnum};
+	
+	\node(professor) at (datadev.north west) [anchor=north east,xshift=-4.8cm, yshift=0cm]{Professor(a): \examauthor};
+
+
+\end{tikzpicture}
+
+\vspace{1.1cm}
+
+\begin{table*}[h!]	
+	\begin{tabularx}{20cm}{cX}
+		\cline{1-2}
+		\multirow{8}{*}{\textbf{Atenção:}} & {Preencha o cabeçalho corretamente.} \\
+		& {Leia atentamente as questões (em silêncio) e não faça perguntas. A interpretação faz parte da prova.}  \\
+		& {Para respostas definitivas use somente caneta (tinta azul ou preta). Respostas a lápis serão anuladas.} \\
+		& {Não se levante do lugar. Não peça materiais emprestados e não converse.} \\
+		& {Evite rasuras. Não use corretivo.} \\
+		& {Questões objetivas rasuradas serão desconsideradas.} \\
+		& {O aluno só poderá entregar a avaliação após 40 minutos do início da mesma.} \\
+		&A prova tem \timelimit\\\cline{1-2}
+	\end{tabularx}
+\end{table*}
+
+
+\end{document}

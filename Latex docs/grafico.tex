@@ -1,0 +1,356 @@
+\documentclass[a4paper,12,addpoints]{exam}
+\usepackage[right=0.75cm, left=0.75cm, top=0.75cm, bottom=1.5cm]{geometry}
+\usepackage{amsmath, amsfonts, amssymb} %para forrmas matemáticas
+\usepackage{graphicx} %pacote para o uso de figuras
+\usepackage[portuguese]{babel} %para os rótulos automáticos fiquem em português
+\usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{chemfig}
+\usepackage{isotope}%para escrever os isótopos
+\usepackage[version=4]{mhchem} %fórmulas químicas e reações químicas com \ce
+\usepackage{chemformula} %fórmula químicas com \ch 
+\usepackage{elements} %para a distribuição eletrônica.
+\usepackage{xymtexpdf}%PDF Mode para moléculas complexas
+\usepackage{epic,carom} %pacote do colesterol
+\usepackage{xymtex} %desenha fórmulas químicas estruturais
+\usepackage{enumitem} %para trocar os rótulos dos itens
+\usepackage{siunitx} %para usar unidades do sistema intenacional
+\usepackage{mathrsfs} %letras para notações matemática
+\usepackage{xfrac} %para ter opções com frações (sfrac)
+\usepackage{rotating} %para rodar o texto
+
+\begin{document}
+	\begin{tikzpicture}
+	\draw [<->] (0,5) -- (0,0) -- (5,0);
+	\node [left] at (0,5) {$P_{(atm)}$};
+	\node [below] at (5,0) {$T_{(K)}$};
+	\draw[dotted] (0,0) grid [step=.5] (4.5,4.5);
+	\draw[very thick] (0.2,0.2) to [out=40,in=240] (2,2);
+	\draw[very thick] (2,2) to [out=20,in=270] (4,4);
+	\draw[very thick] (2,2) to [out=120,in=300] (1,4);
+	\end{tikzpicture}
+	
+	\begin{tikzpicture}
+	\draw [<->] (0,6) -- (0,0) -- (7,0);
+	\draw[dotted] (0,0) grid [step=.5] (6.5,5.5);
+	\node [above] at (0,6) {$S_{(\sfrac{g}{100g de H_2O})}$};
+	\node [left] at (0,1) {10};
+	\draw (-3pt,1) -- (3pt,1);
+	\node [left] at (0,2) {20};
+	\draw (-3pt,2) -- (3pt,2);
+	\node [left] at (0,3) {30};
+	\draw (-3pt,3) -- (3pt,3);
+	\node [left] at (0,4) {40};
+	\draw (-3pt,4) -- (3pt,4);
+	\node [left] at (0,5) {50};
+	\draw (-3pt,5) -- (3pt,5);
+	\node [below] at (7,0) {$T_{(^{\circ} C)}$};
+	\node [below] at (1,0) {10};
+	\draw (1,-3pt) -- (1,3pt);
+	\node [below] at (2,0) {20};
+	\draw (2,-3pt) -- (2,3pt);
+	\node [below] at (3,0) {30};
+	\draw (3,-3pt) -- (3,3pt);
+	\node [below] at (4,0) {40};
+	\draw (4,-3pt) -- (4,3pt);
+	\node [below] at (5,0) {50};
+	\draw (5,-3pt) -- (5,3pt);
+	\node [below] at (6,0) {60};
+	\draw (6,-3pt) -- (6,3pt);
+	\draw [very thick] (1,.5) to [out=18,in=235] (5.5,4.5);
+	\node [below=1mm] at (4,2.5) {B};
+	\draw [fill] (4,2.5) circle (1mm);
+	\coordinate [label=below:$A$] (A) at (3,1.5);
+	\draw [fill] (3,1.5) circle (1mm);
+	\node [below=1mm] at (5,3.75) {C};
+	\draw [fill] (5,3.75) circle (1mm);
+	\node [below=1mm] at (5.5,4.5) {D};
+	\draw [fill] (5.5,4.5) circle (1mm);	
+	\node [above=1mm] at (4,3.5) {E};
+	\draw [fill] (4,3.5) circle (1mm);
+	\node [below=1mm] at (5.5,2.5) {F};
+	\draw [fill] (5.5,2.5) circle (1mm);
+	\node [below=1mm] at (4,1.5) {G};
+	\draw [fill] (4,1.5) circle (1mm);
+	\node [above=1mm] at (3.5,2.5) {H};
+	\draw [fill] (3.5,2.5) circle (1mm);
+	
+	
+	
+	\end{tikzpicture}
+	
+	\begin{tikzpicture}
+	\draw [<->] (0,10) -- (0,0) -- (10,0);
+	\draw[dotted] (0,0) grid [step=.5] (9.5,9.5);
+	%\node [above] at (0,10) {$S_{(\sfrac{g}{100g de H_2O})}$};
+	\node [left=6mm] at (0,3) {
+	\begin{rotate}{90}
+	\large{Solubilidade $S_{(\sfrac{g}{100g de H_2O})}$}
+	\end{rotate}};
+	\node [left] at (0,1) {10};
+	\draw (-3pt,1) -- (3pt,1);
+	\node [left] at (0,2) {20};
+	\draw (-3pt,2) -- (3pt,2);
+	\node [left] at (0,3) {30};
+	\draw (-3pt,3) -- (3pt,3);
+	\node [left] at (0,4) {40};
+	\draw (-3pt,4) -- (3pt,4);
+	\node [left] at (0,5) {50};
+	\draw (-3pt,5) -- (3pt,5);
+	\node [left] at (0,6) {60};
+	\draw (-3pt,6) -- (3pt,6);
+	\node [left] at (0,7) {70};
+	\draw (-3pt,7) -- (3pt,7);
+	\node [left] at (0,8) {80};
+	\draw (-3pt,8) -- (3pt,8);
+	\node [left] at (0,9) {90};
+	\draw (-3pt,9) -- (3pt,9);
+	\node [below=6mm] at (5,0) {\large{Temperatura $T_{(^{\circ} C)}$}};
+	\node [below] at (1,0) {10};
+	\draw (1,-3pt) -- (1,3pt);
+	\node [below] at (2,0) {20};
+	\draw (2,-3pt) -- (2,3pt);
+	\node [below] at (3,0) {30};
+	\draw (3,-3pt) -- (3,3pt);
+	\node [below] at (4,0) {40};
+	\draw (4,-3pt) -- (4,3pt);
+	\node [below] at (5,0) {50};
+	\draw (5,-3pt) -- (5,3pt);
+	\node [below] at (6,0) {60};
+	\draw (6,-3pt) -- (6,3pt);
+	\node [below] at (7,0) {70};
+	\draw (7,-3pt) -- (7,3pt);
+	\node [below] at (8,0) {80};
+	\draw (8,-3pt) -- (8,3pt);
+	\node [below] at (9,0) {90};
+	\draw (9,-3pt) -- (9,3pt);
+	
+	\draw [very thick] (0,7.2) to [out=25,in=225] (3,9.5);
+	\node [above=2mm] at (1.5,8) {
+	\begin{rotate}{40}
+	\ce{NaNO3}
+	\end{rotate}};
+	\draw [very thick] (0,1.2) to [out=25,in=260] (5.2,9.5);
+	\node [above=2mm] at (3.5,4.5) {
+	\begin{rotate}{60}
+	\ce{KNO3}
+	\end{rotate}};	
+	\draw [very thick] (0,2.9) to [out=20,in=220] (9.5,8);
+	\node [above=2mm] at (6,5.5) {
+	\begin{rotate}{30}
+	\ce{NH4NO3}
+	\end{rotate}};	
+	\draw [very thick] (0,3.4) to [out=5,in=185] (9.5,3.9);
+	\node [above=2mm] at (5,3.5) {
+	\begin{rotate}{5}
+	\ce{NaCl}
+	\end{rotate}};
+	\draw [very thick] (0,2.4) to [out=350,in=170] (9.5,0.8);
+	\node [above=2mm] at (5.5,1.5) {
+	\begin{rotate}{350}
+	\ce{Ce2(SO4)3}
+	\end{rotate}};
+	\draw [very thick] (0,2) to [out=25,in=190] (9.5,6.1);
+	\node [above=0mm] at (8.5,6) {
+	\begin{rotate}{0}
+	\ce{KCl}
+	\end{rotate}};
+	
+	
+	
+	\end{tikzpicture}
+	
+	\begin{tikzpicture}
+	\draw [<->] (0,7.5) -- (0,0) -- (8.5,0);
+	\draw [-,red] (7.8,7.5) -- (7.8,6.6) -- (8.5,6.6);%fluido supercrítico
+	\node [right=1.8cm,above,red] at (7.8,6.6) {Fluido supercrítico};
+	%\draw[dotted] (0,0) grid [step=.5] (10,10);
+	\node [left] at (0,7.5) {$P_{(atm)}$};
+	\node [below] at (8.5,0) {$T_{(^{\circ}C)}$};
+	\draw [very thick] (0,.8) to [out=18,in=235] (7.8,6.6);
+	\draw [fill] (2.02,1.56) circle (1mm);% ponto triplo
+	\draw [fill] (.5,6.6) circle (1mm);% P?
+	\draw [very thick] (2,1.6) to (.5,6.6);
+	\draw [dotted] (0,3.11) to (4.6,3.11); % 1atm do PE até y
+	\node [left] at (0,3.11) {1,00};
+	\draw [dotted] (0,6.6) to (7.8,6.6); % do ponto crítico ao y
+	\node [left] at (0,6.6) {217.75 (PC)};
+	\draw [fill] (7.8,6.6) circle (1mm); % ponto crítico
+	\draw [dotted] (7.8,0) to (7.8,6.6); % do ponto crítico ao x
+	\node [below=7mm,right=-2mm] at (7.8,0) {373.99 (TC)};
+	\draw [fill] (4.6,3.11) circle (1mm); % Ponto de ebulição
+	\draw [fill] (1.55,3.11) circle (1mm); % Ponto de fusão
+	\draw [dotted] (1.55,0) to (1.55,3.11);	% PF ao x
+	\node [below] at (1.55,0) {0};
+	\draw [dotted] (4.6,0) to (4.6,3.11); % PE ao x	
+	\node [below] at (4.6,0) {100};
+	\draw [dotted] (2.02,0) to (2.02,1.56); % PT ao x
+	\node [below=2.5mm,right=-1.5mm] at (2.02,0) {0,01};
+	\draw [dotted] (0,1.56) to (2.02,1.56); % PT ao y
+	\node [left] at (0,1.56) {0,006};	
+	
+	\end{tikzpicture}
+	
+	\begin{tikzpicture}
+	\draw [<->] (0,7) -- (0,0) -- (10,0);
+	\node [left] at (0,7) {$T_{(^{\circ}C)}$};
+	\node [below] at (10,0) {tempo$_{(s)}$};
+	\draw [very thick] (0,0) to (2,2);
+	\draw [dotted] (2,0) to (2,2);
+	\draw [very thick] (2,2) to (4,2);
+	\draw [dotted] (4,0) to (4,2);
+	\draw [very thick] (4,2) to (6,4);
+	\draw [dotted] (6,0) to (6,4);
+	\draw [very thick] (6,4) to (8,4);
+	\draw [dotted] (8,0) to (8,4);
+	\draw [very thick] (8,4) to (10,6);
+	
+	\end{tikzpicture}
+	
+	\begin{tikzpicture}
+	\draw [<->] (0,8) -- (0,0) -- (10,0);
+	\node [left] at (0,8) {$T_{(^{\circ}C)}$};
+	\node [below] at (10,0) {tempo$_{(s)}$};
+	\draw [very thick] (0,0) to (2,2);
+	\draw [dotted] (2,0) to (2,2);
+	\draw [very thick] (2,2) to (4,2.5);
+	\draw [dotted] (4,0) to (4,2.5);
+	\draw [very thick] (4,2.5) to (6,4.5);
+	\draw [dotted] (6,0) to (6,4.5);
+	\draw [very thick] (6,4.5) to (8,5);
+	\draw [dotted] (8,0) to (8,5);
+	\draw [very thick] (8,5) to (10,7);
+		
+	\end{tikzpicture}
+	
+	\begin{tikzpicture}
+	\draw [<->] (0,8) -- (0,0) -- (10,0);
+	\node [left] at (0,8) {$T_{(^{\circ}C)}$};
+	\node [below] at (10,0) {tempo$_{(s)}$};
+	\draw [very thick] (0,0) to (2,2);
+	\draw [dotted] (2,0) to (2,2);
+	\draw [very thick] (2,2) to (4,2);
+	\draw [dotted] (4,0) to (4,2);
+	\draw [very thick] (4,2) to (6,4);
+	\draw [dotted] (6,0) to (6,4);
+	\draw [very thick] (6,4) to (8,4.5);
+	\draw [dotted] (8,0) to (8,4.5);
+	\draw [very thick] (8,4.5) to (10,6.5);
+		
+	\end{tikzpicture}
+	
+	\begin{tikzpicture}
+	\draw [<->] (0,8) -- (0,0) -- (10,0);
+	\node [left] at (0,8) {$T_{(^{\circ}C)}$};
+	\node [below] at (10,0) {tempo$_{(s)}$};
+	\draw [very thick] (0,0) to (2,2);
+	\draw [dotted] (2,0) to (2,2);
+	\draw [very thick] (2,2) to (4,2.5);
+	\draw [dotted] (4,0) to (4,2.5);
+	\draw [very thick] (4,2.5) to (6,4.5);
+	\draw [dotted] (6,0) to (6,4.5);
+	\draw [very thick] (6,4.5) to (8,4.5);
+	\draw [dotted] (8,0) to (8,4.5);
+	\draw [very thick] (8,4.5) to (10,7);
+		
+	\end{tikzpicture}
+	
+	
+	\begin{tikzpicture}
+		\draw [<->] (0,6) -- (0,0) -- (7,0);
+		\draw[dotted] (0,0) grid [step=.5] (6.5,5.5);
+		\node [above] at (0,6) {$S_{(\sfrac{g}{100g de H_2O})}$};
+		\node [left] at (0,1) {10};
+		\draw (-3pt,1) -- (3pt,1);
+		\node [left] at (0,2) {20};
+		\draw (-3pt,2) -- (3pt,2);
+		\node [left] at (0,3) {30};
+		\draw (-3pt,3) -- (3pt,3);
+		\node [left] at (0,4) {40};
+		\draw (-3pt,4) -- (3pt,4);
+		\node [left] at (0,5) {50};
+		\draw (-3pt,5) -- (3pt,5);
+		\node [below] at (7,0) {$T_{(^{\circ} C)}$};
+		\node [below] at (1,0) {10};
+		\draw (1,-3pt) -- (1,3pt);
+		\node [below] at (2,0) {20};
+		\draw (2,-3pt) -- (2,3pt);
+		\node [below] at (3,0) {30};
+		\draw (3,-3pt) -- (3,3pt);
+		\node [below] at (4,0) {40};
+		\draw (4,-3pt) -- (4,3pt);
+		\node [below] at (5,0) {50};
+		\draw (5,-3pt) -- (5,3pt);
+		\node [below] at (6,0) {60};
+		\draw (6,-3pt) -- (6,3pt);
+		\draw [very thick,red] (1,.5) to [out=18,in=235] (5.5,4.5);
+		
+		
+		
+		
+	\end{tikzpicture}
+	
+	
+	\begin{tikzpicture}
+		\draw [<->] (0,10) -- (0,0) -- (10,0);
+		\draw[dotted] (0,0) grid [step=.5] (9.5,9.5);
+		%\node [above] at (0,10) {$S_{(\sfrac{g}{100g de H_2O})}$};
+		\node [left=6mm] at (0,3) {
+			\begin{rotate}{90}
+				\large{Solubilidade $S_{(\sfrac{g}{100g de H_2O})}$}
+		\end{rotate}};
+		\node [left] at (0,1) {10};
+		\draw (-3pt,1) -- (3pt,1);
+		\node [left] at (0,2) {20};
+		\draw (-3pt,2) -- (3pt,2);
+		\node [left] at (0,3) {30};
+		\draw (-3pt,3) -- (3pt,3);
+		\node [left] at (0,4) {40};
+		\draw (-3pt,4) -- (3pt,4);
+		\node [left] at (0,5) {50};
+		\draw (-3pt,5) -- (3pt,5);
+		\node [left] at (0,6) {60};
+		\draw (-3pt,6) -- (3pt,6);
+		\node [left] at (0,7) {70};
+		\draw (-3pt,7) -- (3pt,7);
+		\node [left] at (0,8) {80};
+		\draw (-3pt,8) -- (3pt,8);
+		\node [left] at (0,9) {90};
+		\draw (-3pt,9) -- (3pt,9);
+		\node [below=6mm] at (5,0) {\large{Temperatura $T_{(^{\circ} C)}$}};
+		\node [below] at (1,0) {10};
+		\draw (1,-3pt) -- (1,3pt);
+		\node [below] at (2,0) {20};
+		\draw (2,-3pt) -- (2,3pt);
+		\node [below] at (3,0) {30};
+		\draw (3,-3pt) -- (3,3pt);
+		\node [below] at (4,0) {40};
+		\draw (4,-3pt) -- (4,3pt);
+		\node [below] at (5,0) {50};
+		\draw (5,-3pt) -- (5,3pt);
+		\node [below] at (6,0) {60};
+		\draw (6,-3pt) -- (6,3pt);
+		\node [below] at (7,0) {70};
+		\draw (7,-3pt) -- (7,3pt);
+		\node [below] at (8,0) {80};
+		\draw (8,-3pt) -- (8,3pt);
+		\node [below] at (9,0) {90};
+		\draw (9,-3pt) -- (9,3pt);
+		
+		
+		
+		
+		
+	\end{tikzpicture}
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}
