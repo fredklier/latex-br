@@ -13,11 +13,17 @@
 \usepackage{chemfig}
 \usepackage{isotope}%para escrever os isótopos
 \usepackage[version=4]{mhchem} %bioquímica
-\usepackage{chemformula} %fórmula químicas
+\usepackage{chemformula} %fórmula químicas com \ch 
+\usepackage{elements} %para a distribuição eletrônica.
 \usepackage{xymtexpdf}%PDF Mode para moléculas complexas
 \usepackage{epic,carom} %pacote do colesterol
-\usepackage{xymtex}
-\usepackage{mol2chemfig} %pacote para moléculas complexas
+\usepackage{xymtex} %desenha fórmulas químicas estruturais
+\usepackage{enumitem} %para trocar os rótulos dos itens
+\usepackage{siunitx} %para usar unidades do sistema intenacional
+\usepackage{mathrsfs} %letras para notações matemática
+\usepackage{xfrac} %para ter opções com frações (sfrac)
+\usepackage{rotating} %para rodar o texto
+
 
 \let\substfont\sffamily
 \renewcommand*\printatom[1]{\ensuremath{\mathsf{#1}}}
