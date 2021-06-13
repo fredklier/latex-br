@@ -4,3 +4,7 @@
 *.aux
 *.log
 *.gz
+*.dvi
+*.fls
+*.fdb
+*.fdb_latexmk
