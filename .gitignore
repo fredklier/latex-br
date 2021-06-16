@@ -8,3 +8,8 @@
 *.fls
 *.fdb
 *.fdb_latexmk
+*.nav
+*.out
+*.snm
+*.toc
+
