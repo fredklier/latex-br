@@ -1,0 +1,155 @@
+\documentclass[a4paper,12]{exam}
+\usepackage[right=0.75cm, left=0.75cm, top=0.75cm, bottom=1.5cm]{geometry}
+\usepackage[utf8]{inputenc} % para acentos
+\usepackage{amsmath, amsfonts, amssymb} %para forrmas matemáticas
+\usepackage{graphicx} %pacote para o uso de figuras
+\usepackage[portuguese]{babel} %para os rótulos automáticos fiquem em português
+\usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{fourier} %transforma a fonte utilizada no latex
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
+\usepackage{chemformula}
+\usepackage{xymtexpdf}%PDF Mode
+\usepackage{epic,carom} %pacote do colesterol
+\usepackage{xymtex}
+\usepackage{mathrsfs}
+
+
+\author{Fred Klier}
+\newcommand{\class}{Química}
+\newcommand{\term}{2021}
+\newcommand{\examnum}{Exercícios de Química}
+\newcommand{\examdate}{\today}
+\newcommand{\timelimit}{90 minutos}
+\newcommand{\examauthor}{Fred Klier}
+
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{main}
+
+\pgfsetlayers{background,main}
+
+\pagestyle{headandfoot}
+\firstpageheader{}{}{}
+\runningheader{}{}{}
+\firstpagefooter{\class}{\examnum\ - Page \thepage\ of \numpages}{\term}
+\firstpagefootrule
+\runningfooter{\class}{\examnum\ - Page \thepage\ of \numpages}{\term}
+\runningfootrule
+
+\begin{document}
+
+\begin{tikzpicture}[remember picture, overlay] %remember picture permite chamar nodes que não estão no mesmo ambiente tikzpicture e overlay permite passar as margens definidas.
+
+	\node(logo) at (current page.north east) [anchor=north east,xshift=-0.25cm, yshift=-0.5cm] {\includegraphics[width=6cm]{cnsm.png}};
+	
+	\node(nomealuno) at (logo.north west) [anchor=north east]{{\textbf{Nome:}}{\makebox[11cm]{\hrulefill}\textbf{N$^{\circ}$:}}{\makebox[1cm]{\hrulefill}}};
+	
+	%\node(nota) at (logo.north west) [anchor=north east,xshift=-0.01cm, yshift=-0.5cm]{\textbf{Nota:}{\makebox[1cm]{\hrulefill}}};
+	
+	\node(dataprova) at (logo.north west) [anchor=north east,xshift=-0.1cm, yshift=-1cm]{Data de aplicação:{\makebox[.1cm]{}}{\makebox[0.6cm]{\hrulefill}}/{\makebox[0.6cm]{\hrulefill}}/\term};
+	
+	\node(datadev) at (logo.north west) [anchor=north east,xshift=-0.01cm, yshift=-1.6cm]{Data da devolução:{\makebox[.1cm]{}}{{\makebox[0.6cm]{\hrulefill}}/{\makebox[0.6cm]{\hrulefill}}/\term}};
+	
+	%\node(valor) at (nota.north west) [anchor=north east,xshift=0cm, yshift=0cm] {\textbf{Valor: 30} {\makebox[1.7cm]{}}};
+	
+	\node(turma) at (logo.north west) [anchor=north east,xshift=-9.94cm, yshift=-.5cm]{2$^{\circ}$ Ano do Ensino médio};
+	
+	\node(prova) at (turma.south west) [anchor=north west,xshift=0cm, yshift=-.1cm]{\examnum};
+	
+	\node(professor) at (datadev.north west) [anchor=north east,xshift=-4.8cm, yshift=0cm]{Professor(a): \examauthor};
+
+
+\end{tikzpicture}
+
+\vspace{1.2cm}
+\rule{18cm}{1pt}
+%\fbox{$[substância] =\mathscr{M}=\frac{n_1}{V_{(l)}} =\frac{m_1}{M_1  \ast  V_{(l)}}$} \\
+
+\begin{center}
+\begin{Huge}
+\fbox{
+Exercício
+}
+\end{Huge}
+\end{center}
+
+
+\begin{multicols}{2}
+	\begin{questions}
+		
+		\question Ao analisarmos, na mesma temperatura, três líquidos conhecidos: água, etanol e éter etílico. Obtemos a seguinte tabela:
+
+
+\begin{tabular}{ |c|c|c| }
+    \hline
+    Líquido & Temperatura & Pressão de vapor \\ \hline
+    Água & $20^{\circ}C$ & $17,5 \ mmHg$ \\ \hline
+    Etanol & $20^{\circ}C$ & $43,9 \ mmHg$ \\ \hline
+    Éter etílico & $20^{\circ}C$ & $442,2 \ mmHg$ \\
+    \hline
+\end{tabular}
+
+
+A partir das informações fornecidas na tabela, podemos afirmar que no gráfico:
+\begin{center}
+\begin{tikzpicture}[line width=1pt, scale=1]
+    \draw[<->] (0,3) -- (0,0) -- (4,0);
+    \draw[xshift=-8mm, red]  (1,0.5) .. controls (3,0.5) and (2.8,2.5) .. (2.8,2.5);
+    \node [above] at (1.97,2.5) {$A$};
+    \draw[xshift=-5mm]  (1.2,0.5) .. controls (3,0.5) and (3,2.5) .. (3,2.5);
+    \node [above] at (2.45,2.5) {$B$};
+    \draw [green] (1.2,0.5) .. controls (3,0.5) and (3,2.5) .. (3,2.5);
+    \node [above] at (2.95,2.5) {$C$};
+    %\draw[loosely dashed] (2.95,0) -- (2.95,2);
+    %\node [below] at (2.95,0) {$T_4$};
+    %\draw[loosely dashed] (2.45,0) -- (2.45,2);
+    %\node [below] at (2.45,0) {$T_3$};
+    \draw[loosely dashed] (1.97,0) -- (1.97,2);
+    \node [below] at (1.97,0) {$T_2$};
+    %\draw[loosely dashed] (1.52,0) -- (1.52,2);
+    %\node [below] at (1.52,0) {$T_1$};
+    \draw[loosely dashed] (0,2) -- (1.97,2);
+    \node [left] at (0,2) {$P_1$};
+    \draw[loosely dashed] (0,1.5) -- (1.97,1.5);
+    \node [left] at (0,1.5) {$P_2$};
+    \draw[loosely dashed] (0,1) -- (1.97,1);
+    \node [left] at (0,1) {$P_3$};
+    \node(pressvap) at (0,0) [anchor=south west,xshift=-0.5cm, yshift=0.1cm, rotate=90] {Pressão de vapor};
+    \node(temp) at (0,0) [anchor=north west,xshift=0.75cm, yshift=-0.5cm] {Temperatura};    
+\end{tikzpicture}
+\end{center}
+Responda:
+
+
+{
+    \renewcommand*\thechoice{\Roman{choice}}
+    \renewcommand*\choicelabel{\thechoice)}
+    \begin{choices}
+        \choice Qual das letras no gráfico corresponde a cada substância?
+        \choice Qual das substâncias tem maior ponto de ebulição?
+        \choice Qual delas tem o menor ponto de ebulição?
+    \end{choices}
+}
+
+
+{
+\renewcommand*\thechoice{\alph{choice}}
+\renewcommand*\choicelabel{\thechoice)}
+%
+    Compare a água do mar com água potável em relação:
+%    
+\begin{choices}
+    \choice às volatilidades;
+    \choice às temperaturas de ebulição;
+    \choice às temperaturas de congelação.
+\end{choices}
+}
+		
+		
+	\end{questions}	
+\end{multicols}
+\end{document}

@@ -1,0 +1,105 @@
+\documentclass[a4paper,12]{exam}
+\usepackage[right=0.75cm, left=0.75cm, top=0.75cm, bottom=1.5cm]{geometry}
+\usepackage[utf8]{inputenc} % para acentos
+\usepackage{amsmath, amsfonts, amssymb} %para forrmas matemáticas
+\usepackage{graphicx} %pacote para o uso de figuras
+\usepackage[portuguese]{babel} %para os rótulos automáticos fiquem em português
+\usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{fourier} %transforma a fonte utilizada no latex
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{chemfig}
+\usepackage{isotope}%para escrever os isótopos
+\usepackage[version=4]{mhchem} %bioquímica
+\usepackage{chemformula} %fórmula químicas
+\usepackage{elements} %para a distribuição eletrônica.
+\usepackage{xymtexpdf}%PDF Mode para moléculas complexas
+\usepackage{epic,carom} %pacote do colesterol
+\usepackage{xymtex} %desenha fórmulas químicas estruturais
+\usepackage{enumitem} %para trocar os rótulos dos itens
+\usepackage{siunitx} %para usar unidades do sistema intenacional
+\usepackage{mathrsfs} %letras para notações matemática
+
+
+\author{Fred Klier}
+\newcommand{\class}{Química}
+\newcommand{\term}{2021}
+\newcommand{\examnum}{Exercícios de Química}
+\newcommand{\examdate}{\today}
+\newcommand{\timelimit}{90 minutos}
+\newcommand{\examauthor}{Fred Klier}
+
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{main}
+
+\pgfsetlayers{background,main}
+
+\pagestyle{headandfoot}
+\firstpageheader{}{}{}
+\runningheader{}{}{}
+\firstpagefooter{\class}{\examnum\ - Page \thepage\ of \numpages}{\term}
+\firstpagefootrule
+\runningfooter{\class}{\examnum\ - Page \thepage\ of \numpages}{\term}
+\runningfootrule
+
+\begin{document}
+
+\begin{tikzpicture}[remember picture, overlay] %remember picture permite chamar nodes que não estão no mesmo ambiente tikzpicture e overlay permite passar as margens definidas.
+
+	\node(logo) at (current page.north east) [anchor=north east,xshift=-0.25cm, yshift=-0.5cm] {\includegraphics[width=6cm]{cnsm.png}};
+	
+	\node(nomealuno) at (logo.north west) [anchor=north east]{{\textbf{Nome:}}{\makebox[11cm]{\hrulefill}\textbf{N$^{\circ}$:}}{\makebox[1cm]{\hrulefill}}};
+	
+	%\node(nota) at (logo.north west) [anchor=north east,xshift=-0.01cm, yshift=-0.5cm]{\textbf{Nota:}{\makebox[1cm]{\hrulefill}}};
+	
+	\node(dataprova) at (logo.north west) [anchor=north east,xshift=-0.1cm, yshift=-1cm]{Data de aplicação:{\makebox[.1cm]{}}{\makebox[0.6cm]{\hrulefill}}/{\makebox[0.6cm]{\hrulefill}}/\term};
+	
+	\node(datadev) at (logo.north west) [anchor=north east,xshift=-0.01cm, yshift=-1.6cm]{Data da devolução:{\makebox[.1cm]{}}{{\makebox[0.6cm]{\hrulefill}}/{\makebox[0.6cm]{\hrulefill}}/\term}};
+	
+	%\node(valor) at (nota.north west) [anchor=north east,xshift=0cm, yshift=0cm] {\textbf{Valor: 30} {\makebox[1.7cm]{}}};
+	
+	\node(turma) at (logo.north west) [anchor=north east,xshift=-9.94cm, yshift=-.5cm]{2$^{\circ}$ Ano do Ensino médio};
+	
+	\node(prova) at (turma.south west) [anchor=north west,xshift=0cm, yshift=-.1cm]{\examnum};
+	
+	\node(professor) at (datadev.north west) [anchor=north east,xshift=-4.8cm, yshift=0cm]{Professor(a): \examauthor};
+
+
+\end{tikzpicture}
+
+\vspace{1.2cm}
+\rule{18cm}{1pt}
+
+\begin{multicols}{2}
+  	\begin{questions}
+	  \question em recipiente contendo um líquido incolor e homogêneo que ao utilizar aparelhos foi constatado que conduz corrente elétrica. O líquido deveria ser uma solução diluída de glicose e frutose. Sabendo disso explique se é possível determinar se a solução está contaminada somente com esses dados? 
+	  \fillwithlines{8em}
+	  
+	  \question As soluções químicas são amplamente utilizadas tanto em nosso cotidiano como em
+	  laboratórios. Uma delas, solução aquosa de sulfato de cobre, CuSO4, a 1\%, é aplicada no controle
+	  fitossanitário das plantas atacadas por determinados fungos. A massa de sulfato de cobre,
+	  CuSO4, em gramas, necessária para prepararmos 20 litros dessa solução a 1\% p/V é:
+	  \makeemptybox{2cm}
+	  
+	  \question As soluções químicas são amplamente utilizadas tanto em nosso cotidiano como emlaboratórios. Uma delas, solução aquosa de sulfato de cobre penta-hidratado, \ce{CuSO4.5H2O}, a 1\%, é usado como reagente analítico. De posse de uma solução estoque de 1 mol/L com densidade de 2,0 g/ml quanto deve ser usado de solução estoque para prepararmos 20 litros dessa solução a 1\% m/m é: (dados: Cu=64; S=32; O=16; H=1)
+	  \makeemptybox{2cm}
+
+	\question O consumo de água com mais de 10 ppm (partes por milhão) de nitratosnão é recomendável, segundo a Organização Mundial de Saúde. Sabendo-se que a densidade daágua é de aproximadamente 1,0 grama por mililitro, em 1,0 metro cúbico de água (1 000 litros)a quantidade máxima de nitratos, aceitável pela OMS, seria de:
+	
+	\question A 20$^{\circ}$C uma solução aquosa de hidróxido de sódio tem uma densidade de 1,04 \si{g/cm^3} eé 0,946 mol/L em NaOH. A quantidade de matéria e a massa de hidróxido de sódio presentes em 50,0 \si{cm^3}dessa solução são, respectivamente:\makeemptybox{2cm}
+	
+	\question Considere as seguintes soluções:
+	\begin{enumerate}[label=\Roman*-]
+		\item 10 g de NaCl em 100 g de água.% 9%mm 
+		\item 10 g de NaCl em 100 ml de água.
+		\item 20 g de NaCl em 180 g de água.% 10%mm
+		\item 10 mols de NaCl em 90 mols de água.
+	\end{enumerate}
+	Foi perguntado qual das soluções tem concentração 10\% em massa de cloreto de sódio. E um aluno respondeu que era o item I. Diga se ele está certo ou errado e justifique a sua resposta com números. \makeemptybox{2cm}
+	
+	
+	 \end{questions}
+\end{multicols}
+\end{document}

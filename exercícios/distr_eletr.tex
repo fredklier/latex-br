@@ -1,0 +1,136 @@
+\documentclass[a4paper,12]{exam}
+\usepackage[right=0.75cm, left=0.75cm, top=0.75cm, bottom=1.5cm]{geometry}
+\usepackage[utf8]{inputenc} % para acentos
+\usepackage{amsmath, amsfonts, amssymb} %para forrmas matemáticas
+\usepackage{graphicx} %pacote para o uso de figuras
+\usepackage[portuguese]{babel} %para os rótulos automáticos fiquem em português
+\usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{fourier} %transforma a fonte utilizada no latex
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
+\usepackage{chemformula}
+\usepackage{elements} %para a distribuição eletrônica
+\usepackage{xymtexpdf}%PDF Mode
+\usepackage{epic,carom} %pacote do colesterol
+%\usepackage{stree}
+\usepackage{xymtex}
+\usepackage{siunitx}
+\usepackage{enumitem} %para trocar os rótulos dos itens
+\usepackage{mathrsfs}
+
+
+
+
+
+%pacote para o m de mol
+\usepackage{trimclip}
+\newcommand{\emeta}{\clipbox{0em -1ex .3em -1ex}{$m$}\clipbox{.3em -1ex 0em -1ex}{$\eta$}}\let\substfont\sffamily 
+\renewcommand*\printatom[1]{\ensuremath{\mathsf{#1}}}
+%para o m de mol
+
+\author{Fred Klier}
+\newcommand{\class}{Química}
+\newcommand{\term}{2021}
+\newcommand{\examnum}{Exercícios de Química}
+\newcommand{\examdate}{\today}
+\newcommand{\timelimit}{90 minutos}
+\newcommand{\examauthor}{Fred Klier}
+
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{main}
+
+\pgfsetlayers{background,main}
+
+\pagestyle{headandfoot}
+\firstpageheader{}{}{}
+\runningheader{}{}{}
+\firstpagefooter{\class}{\examnum\ -Page \thepage\ of \numpages}{\term}
+\firstpagefootrule{}
+\runningfooter{\class}{\examnum\ -Page \thepage\ of \numpages}{\term}
+\runningfootrule{}
+
+\begin{document}
+
+\begin{tikzpicture}[remember picture, overlay] %remember picture permite chamar nodes que não estão no mesmo ambiente tikzpicture e overlay permite passar as margens definidas.
+
+	\node(logo) at (current page.north east) [anchor=north east,xshift=-0.25cm, yshift=-0.5cm] {\includegraphics[width=6cm]{cnsm.png}};
+	
+	\node(nomealuno) at (logo.north west) [anchor=north east]{{\textbf{Nome:}}{\makebox[11cm]{\hrulefill}\textbf{N$^{\circ}$:}}{\makebox[1cm]{\hrulefill}}};
+	
+	%\node(nota) at (logo.north west) [anchor=north east,xshift=-0.01cm, yshift=-0.5cm]{\textbf{Nota:}{\makebox[1cm]{\hrulefill}}};
+	
+	\node(dataprova) at (logo.north west) [anchor=north east,xshift=-0.1cm, yshift=-1cm]{Data de aplicação:{\makebox[.1cm]{}}{\makebox[0.6cm]{\hrulefill}}/{\makebox[0.6cm]{\hrulefill}}/\term};
+	
+	\node(datadev) at (logo.north west) [anchor=north east,xshift=-0.01cm, yshift=-1.6cm]{Data da devolução:{\makebox[.1cm]{}}{{\makebox[0.6cm]{\hrulefill}}/{\makebox[0.6cm]{\hrulefill}}/\term}};
+	
+	%\node(valor) at (nota.north west) [anchor=north east,xshift=0cm, yshift=0cm] {\textbf{Valor: 30} {\makebox[1.7cm]{}}};
+	
+	\node(turma) at (logo.north west) [anchor=north east,xshift=-9.94cm, yshift=-.5cm]{2$^{\circ}$ Ano do Ensino médio};
+	
+	\node(prova) at (turma.south west) [anchor=north west,xshift=0cm, yshift=-.1cm]{\examnum};
+	
+	\node(professor) at (datadev.north west) [anchor=north east,xshift=-4.8cm, yshift=0cm]{Professor(a): \examauthor};
+
+
+\end{tikzpicture}
+
+\vspace{1.2cm}
+\rule{18cm}{1pt}
+%\fbox{$[substância] =\mathscr{M}=\frac{n_1}{V_{(l)}} =\frac{m_1}{M_1  \ast  V_{(l)}}$} \\
+
+\begin{center}
+\begin{large}
+\fbox{
+$1s^2, 2s^2, 2p^6, 3s^2, 3p^6, 4s^2, 3d^{10}, 4p^6, 5s^2, 4d^{10}, 5p^6, 6s^2, 4f^{14}, 5d^{10}, 6p^6, 7s^2, 5f^{14}, 6d^{10}, 7p^6$
+}
+\end{large}
+
+\fbox{
+ex: $_{6}C=1s^2, 2s^2, 2p^2$
+}
+\end{center}
+
+
+\begin{multicols}{2}
+	\begin{questions}
+		
+	  \question[] observe o exemplo: \\
+	  \fbox{\ch{
+  !(\elconf{Li})( "\chlewis{180.}{Li}" )}} 
+  \fbox{\ch{
+  !(\elconf{F})( "\chlewis{0.90:180:270:}{F}" )
+   }}
+   
+   Faça as distribuições eletrônicas e a representação da fórmula espacial de Lewis dos elementos abaixo:
+	{\renewcommand*\thechoice{\alph{choice}} 
+			\renewcommand*\choicelabel{\thechoice)}   
+   \begin{choices}
+   \choice \ce{^{}_{8}O}
+   \choice \ce{^{}_{12}Mg}
+   \choice \ce{^{}_{19}K}
+   \choice \ce{^{}_{26}Fe}
+   \choice \ce{^{}_{92}U}
+   \end{choices}
+}
+
+\question[10] Observe os elementos abaixo.\\
+\ce{^{238}_{92}U} 
+\ce{^{60}_{28}Ni^{-2}} 
+\ce{^{39}_{19}K^+} 
+\ce{^{210}_{83}Bi} \\
+\begin{parts}
+    \part Escreva o número atômico e a massa atômica para cada um dos elementos.
+    \makeemptybox{2cm}
+    \part Escreva o número de Prótons, neutros e elétrons de cada um dos elementos.
+    \makeemptybox{2cm}
+\end{parts}
+
+
+
+	\end{questions}	
+\end{multicols}
+\end{document}

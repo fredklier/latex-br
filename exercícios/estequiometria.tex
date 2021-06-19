@@ -1,0 +1,198 @@
+\documentclass[a4paper,12]{exam}
+\usepackage[right=0.75cm, left=0.75cm, top=0.75cm, bottom=1.5cm]{geometry}
+\usepackage[utf8]{inputenc} % para acentos
+\usepackage{amsmath, amsfonts, amssymb} %para forrmas matemáticas
+\usepackage{graphicx} %pacote para o uso de figuras
+\usepackage[portuguese]{babel} %para os rótulos automáticos fiquem em português
+\usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{fourier} %transforma a fonte utilizada no latex
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{chemfig}
+\usepackage{isotope}%para escrever os isótopos
+\usepackage[version=4]{mhchem} %bioquímica
+\usepackage{chemformula} %fórmula químicas
+\usepackage{elements} %para a distribuição eletrônica.
+\usepackage{xymtexpdf}%PDF Mode para moléculas complexas
+\usepackage{epic,carom} %pacote do colesterol
+\usepackage{xymtex} %desenha fórmulas químicas estruturais
+\usepackage{enumitem} %para trocar os rótulos dos itens
+\usepackage{siunitx} %para usar unidades do sistema intenacional
+\usepackage{mathrsfs} %letras para notações matemática
+
+
+\author{Fred Klier}
+\newcommand{\class}{Química}
+\newcommand{\term}{2021}
+\newcommand{\examnum}{Exercícios de Química}
+\newcommand{\examdate}{\today}
+\newcommand{\timelimit}{90 minutos}
+\newcommand{\examauthor}{Fred Klier}
+
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{main}
+
+\pgfsetlayers{background,main}
+
+\pagestyle{headandfoot}
+\firstpageheader{}{}{}
+\runningheader{}{}{}
+\firstpagefooter{\class}{\examnum\ - Page \thepage\ of \numpages}{\term}
+\firstpagefootrule
+\runningfooter{\class}{\examnum\ - Page \thepage\ of \numpages}{\term}
+\runningfootrule
+
+\begin{document}
+
+\begin{tikzpicture}[remember picture, overlay] %remember picture permite chamar nodes que não estão no mesmo ambiente tikzpicture e overlay permite passar as margens definidas.
+
+	\node(logo) at (current page.north east) [anchor=north east,xshift=-0.25cm, yshift=-0.5cm] {\includegraphics[width=6cm]{cnsm.png}};
+	
+	\node(nomealuno) at (logo.north west) [anchor=north east]{{\textbf{Nome:}}{\makebox[11cm]{\hrulefill}\textbf{N$^{\circ}$:}}{\makebox[1cm]{\hrulefill}}};
+	
+	%\node(nota) at (logo.north west) [anchor=north east,xshift=-0.01cm, yshift=-0.5cm]{\textbf{Nota:}{\makebox[1cm]{\hrulefill}}};
+	
+	\node(dataprova) at (logo.north west) [anchor=north east,xshift=-0.1cm, yshift=-1cm]{Data de aplicação:{\makebox[.1cm]{}}{\makebox[0.6cm]{\hrulefill}}/{\makebox[0.6cm]{\hrulefill}}/\term};
+	
+	\node(datadev) at (logo.north west) [anchor=north east,xshift=-0.01cm, yshift=-1.6cm]{Data da devolução:{\makebox[.1cm]{}}{{\makebox[0.6cm]{\hrulefill}}/{\makebox[0.6cm]{\hrulefill}}/\term}};
+	
+	%\node(valor) at (nota.north west) [anchor=north east,xshift=0cm, yshift=0cm] {\textbf{Valor: 30} {\makebox[1.7cm]{}}};
+	
+	\node(turma) at (logo.north west) [anchor=north east,xshift=-9.94cm, yshift=-.5cm]{2$^{\circ}$ Ano do Ensino médio};
+	
+	\node(prova) at (turma.south west) [anchor=north west,xshift=0cm, yshift=-.1cm]{\examnum};
+	
+	\node(professor) at (datadev.north west) [anchor=north east,xshift=-4.8cm, yshift=0cm]{Professor(a): \examauthor};
+
+
+\end{tikzpicture}
+
+\vspace{1.2cm}
+\rule{18cm}{1pt}
+%\fbox{$[substância] =\mathscr{M}=\frac{n_1}{V_{(l)}} =\frac{m_1}{M_1  \ast  V_{(l)}}$} \\
+
+
+
+
+\begin{multicols}{2}
+  	\begin{questions}
+	  \question{Dada a equação química não-balanceada:}
+
+  		\ce{Na2CO3+HCl -> NaCl + CO2 + H2O}
+  		
+A massa de carbonato de sódio que reage completamente com 0,25 mol de ácido clorídrico é: (Dado: \ce{Na2CO3} = 106 \si{g \cdot mol^{-1}})
+\makeemptybox{2cm}
+
+	  \question Uma vela de parafina queima-se, no ar ambiente, para formar água e dióxido de carbono. A parafina é composta por moléculas de vários tamanhos,mas utilizaremos para ela a fórmula \ce{C25H52}. Tal reação representa-se pela equação:
+	\begin{center}
+		\ce{C25H52 + O2 -> H2O + CO2}	
+	\end{center}
+\begin{enumerate}[label=(\roman*)]
+\item Equilibre a reação.
+\makeemptybox{1cm}
+\item Quantos mol de oxigênio são necessários para queimar um mol de parafina?
+\makeemptybox{2cm}
+\item Quanto pesa esse oxigênio?
+\makeemptybox{2cm}
+\end{enumerate}
+(massas molares: H = 1 \si{g/mol}; C = 12 \si{g/mol}; O = 16 \si{g/mol})
+
+		\question O gás resultante da combustão de 160 g de enxofre reage completamente em NaOH. Calcule a massa de \ce{Na2SO3} obtido. (massas
+molares: S = 32 \si{g/mol}; \ce{Na2SO3} = 126 \si{g/mol})
+	\begin{center}
+\ce{S + O2 -> SO2} \\
+\ce{SO2 + 2 NaOH -> Na2SO3 + H2O}`
+	\end{center}
+\makeemptybox{2cm}
+
+
+		\question A equação da reação global da fermentação alcoólica da sacarose é:		
+	\begin{center}
+	\ce{C12H22O11 + H2O ->T[fermentação][alcoólica] 4 C2H6O + 4 CO2}
+	\end{center}
+	Qual o volume de \ce{CO2_{(g)}} liberado, medido nas condições ambientes (25 ºC, 1 atm), para cada mol de etanol formado? \\ Volume molar do \ce{CO2_{(g)}} = 25 L/mol (25$^{\circ}$C, 1 atm)
+	\makeemptybox{2cm}
+	  
+	 \question  A equação a seguir representa a obtenção de ferro pela reação de hematita com carvão:
+	 \begin{center}
+	 \ce{Fe2O3 + 3 C -> 2 Fe + 3 CO}
+	 \end{center}
+\begin{enumerate}[label=(\roman*)]
+\item Quantos quilogramas de hematita são
+necessários para produzir 1120 quilogramas de ferro?
+\makeemptybox{2cm}
+\item Calcule, em condições ambientes, quantos
+dm3 de CO são obtidos por mol de ferro produzido.
+\makeemptybox{2cm}
+\end{enumerate}
+
+(volume molar nas condições ambientes = 24,0 \si{dm^3}; massas molares: Fe = 56 \si{g/mol}, \ce{Fe2O3} = 160 \si{g/mol})
+
+		\question Considere a equação da reação de combustão do acetileno (não-balanceada):
+		\begin{center}
+	 \ce{C2H2_{(g)} + O2_{(g)} -> CO2_{(g)} + H2O_{(g)}}
+	 \end{center}
+ 
+Admitindo-se CNTP e comportamento de gás ideal, a soma do número de mol dos produtos obtidos, quando 112 litros de \ce{C2H2} reagem com excesso de oxigênio, é igual a:
+\makeemptybox{2cm}
+
+		\question Considere uma amostra de 180 mL de água destilada, com densidade igual a 1 kg/L, contida em um copo. Sabendo que M(H) = 1 g/mol e M(O) = 16 g/mol, assinale os itens verdadeiros.
+		\begin{checkboxes}
+\choice No copo, encontram-se \num{18,06 e24} átomos.
+\choice O número de moléculas contidas no copo é igual ao número de átomos encontrados em uma amostra de 120 g de carbono-12.
+\choice Para se produzir a quantidade de água contida no copo, é preciso reagir totalmente 30 g de H2 com 150 g de ce{O2}.
+\choice A massa molecular da água no copo é igual a 180 g
+		\end{checkboxes}
+
+		\question Nas indústrias petroquímicas, enxofre pode ser obtido pela reação:
+\begin{center}
+\ce{2 H2S + SO2 -> 3 S + 2 H2O}
+\end{center}
+Qual é a quantidade máxima de enxofre, em gramas, que pode ser obtida partindo-se de 5,0 mol de \ce{H2S} e 2,0 mol de \ce{SO2}? Indique os cálculos. (S = 32\si{g/mol})
+\makeemptybox{2cm}
+
+\question 400 g de NaOH são adicionados a 504 g de
+\ce{HNO3}. Calcule:
+\begin{enumerate}
+\item a massa de \ce{NaNO3} obtida;
+\item a massa do reagente em excesso, se houver.
+\end{enumerate}
+(massas molares: \ce{HNO3} = 63 \si{g/mol}; NaOH =
+= 40 \si{g/mol}; \ce{NaNO3} = 85 \si{g/mol})
+\begin{center}
+\ce{NaOH + HNO3 -> NaNO3 + H2O}
+\end{center}
+\makeemptybox{2cm}
+
+\question Qual a quantidade máxima de \ce{NH3}, em gramas, que pode ser obtida a partir de uma mistura de 140 g de \ce{N2} com 18 g de \ce{H2}?
+(massas atômicas: H = 1\si{g/mol}, N = 14\si{g/mol})
+\begin{center}
+\ce{N2 + 3H2 ->  2 NH3}
+\end{center}
+\makeemptybox{2cm}
+
+\question O carbonato de sódio, empregado na
+fabricação de vidro, é preparado a partir de
+carbonato de cálcio e cloreto de sódio:
+\begin{center}
+\ce{CaCO3 + 2 NaCl -> Na2CO3 + CaCl2}
+\end{center}
+Colocando-se para reagir 1 000 g de \ce{CaCO3} e
+585 g de NaCl, a massa obtida de carbonato
+de sódio, em gramas, admitindo-se rendimento de 100\% no processo, é:
+\makeemptybox{2cm}
+
+\question Qual a porcentagem de impureza que existe em uma amostra impura de 150 g de hidróxido de sódio (NaOH) que contém 120 g de NaOH puro?
+\makeemptybox{2cm}
+
+\question Para obtermos 17,6 g de gás carbônico (\ce{CO2}) pela queima total de um carvão com 60\% de pureza, necessitaremos de uma amostra de carvão com massa igual a: \\
+(massas atômicas: C = 12\si{g/mol}, O = 16\si{g/mol})
+\makeemptybox{2cm}
+
+
+
+	 \end{questions}
+\end{multicols}
+\end{document}

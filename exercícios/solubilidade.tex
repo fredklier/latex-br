@@ -1,0 +1,257 @@
+\documentclass[a4paper,12]{exam}
+\usepackage[right=0.75cm, left=0.75cm, top=0.75cm, bottom=1.5cm]{geometry}
+%\usepackage[utf8]{inputenc} % para acentos no pdflatex
+\usepackage{amsmath, amsfonts, amssymb} %para forrmas matemáticas
+\usepackage{graphicx} %pacote para o uso de figuras
+\usepackage[portuguese]{babel} %para os rótulos automáticos fiquem em português xelatex
+\usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{fourier-otf} %transforma a fonte utilizada no latex
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{chemfig}
+\usepackage{isotope}%para escrever os isótopos
+\usepackage[version=4]{mhchem} %fórmulas químicas e reações químicas com \ce
+\usepackage{chemformula} %fórmula químicas com \ch 
+\usepackage{elements} %para a distribuição eletrônica.
+\usepackage{xymtexpdf}%PDF Mode para moléculas complexas
+\usepackage{epic,carom} %pacote do colesterol
+\usepackage{xymtex} %desenha fórmulas químicas estruturais
+\usepackage{enumitem} %para trocar os rótulos dos itens
+\usepackage{siunitx} %para usar unidades do sistema intenacional
+\usepackage{mathrsfs} %letras para notações matemática
+\usepackage{xfrac} %para ter opções com frações (sfrac)
+\usepackage{rotating} %para rodar o texto
+
+%\usepackage{DejaVuSerif}
+%\usepackage[T1]{fontenc}
+\usepackage{tgbonum} % Para trocar a fonte
+\usepackage{rotating} %para rodar o texto
+\usepackage{mathrsfs} %pacote para um dos m diferentes
+\usepackage{marvosym, upgreek} %pacotes para o uptau e scorpio
+%\renewcommand*\printatom[1]{\ensuremath{\mathsf{#1}}} 
+%para o m de mol
+\usepackage{fontspec}
+\newfontfamily{\brush}{Brush Script MT} 
+\newcommand{\eme}{\brush M}
+%fonte do m de mol mais perto
+
+
+\author{Fred Klier}
+\newcommand{\class}{Química}
+\newcommand{\term}{2021}
+\newcommand{\examnum}{Exercícios de Química}
+\newcommand{\examdate}{\today}
+\newcommand{\timelimit}{90 minutos}
+\newcommand{\examauthor}{Fred Klier}
+
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{main}
+
+\pgfsetlayers{background,main}
+
+\pagestyle{headandfoot}
+\firstpageheader{}{}{}
+\runningheader{}{}{}
+\firstpagefooter{\class}{\examnum\ - Page \thepage\ of \numpages}{\term}
+\firstpagefootrule
+\runningfooter{\class}{\examnum\ - Page \thepage\ of \numpages}{\term}
+\runningfootrule
+
+\begin{document}
+
+\begin{tikzpicture}[remember picture, overlay] %remember picture permite chamar nodes que não estão no mesmo ambiente tikzpicture e overlay permite passar as margens definidas.
+
+	\node(logo) at (current page.north east) [anchor=north east,xshift=-0.25cm, yshift=-0.5cm] {\includegraphics[width=6cm]{cnsm.png}};
+	
+	\node(nomealuno) at (logo.north west) [anchor=north east]{{\textbf{Nome:}}{\makebox[11cm]{\hrulefill}\textbf{N$^{\circ}$:}}{\makebox[1cm]{\hrulefill}}};
+	
+	%\node(nota) at (logo.north west) [anchor=north east,xshift=-0.01cm, yshift=-0.5cm]{\textbf{Nota:}{\makebox[1cm]{\hrulefill}}};
+	
+	\node(dataprova) at (logo.north west) [anchor=north east,xshift=-0.1cm, yshift=-1cm]{Data de aplicação:{\makebox[.1cm]{}}{\makebox[0.6cm]{\hrulefill}}/{\makebox[0.6cm]{\hrulefill}}/\term};
+	
+	\node(datadev) at (logo.north west) [anchor=north east,xshift=-0.01cm, yshift=-1.6cm]{Data da devolução:{\makebox[.1cm]{}}{{\makebox[0.6cm]{\hrulefill}}/{\makebox[0.6cm]{\hrulefill}}/\term}};
+	
+	%\node(valor) at (nota.north west) [anchor=north east,xshift=0cm, yshift=0cm] {\textbf{Valor: 30} {\makebox[1.7cm]{}}};
+	
+	\node(turma) at (logo.north west) [anchor=north east,xshift=-9.94cm, yshift=-.5cm]{2$^{\circ}$ Ano do Ensino médio};
+	
+	\node(prova) at (turma.south west) [anchor=north west,xshift=0cm, yshift=0cm]{\examnum};
+	
+	\node(professor) at (datadev.north west) [anchor=north east,xshift=-4.46cm, yshift=0cm]{Professor(a): \examauthor};
+
+
+\end{tikzpicture}
+
+\vspace{1.2cm}
+\rule{18cm}{1pt}
+
+
+\begin{center}
+\begin{Huge}
+\fbox{
+Solubilidade
+}
+\end{Huge}
+\end{center}
+
+
+
+
+\begin{multicols}{2}
+	\begin{questions}
+
+		\question observe o gráfico abaixo e responda as questões a seguir:
+		
+\begin{tikzpicture}[scale=0.75]
+	\draw [<->] (0,10) -- (0,0) -- (10,0);
+	\draw[dotted] (0,0) grid [step=.5] (9.5,9.5);
+	\node [left=6mm] at (0,3) {
+	\begin{rotate}{90}
+	\large{Solubilidade $S_{(\sfrac{g}{100g de H_2O})}$}
+	\end{rotate}};
+	\node [left] at (0,1) {10};
+	\node [left] at (0,2) {20};
+	\node [left] at (0,3) {30};
+	\node [left] at (0,4) {40};
+	\node [left] at (0,5) {50};
+	\node [left] at (0,6) {60};
+	\node [left] at (0,7) {70};
+	\node [left] at (0,8) {80};
+	\node [left] at (0,9) {90};
+	\node [below=6mm] at (5,0) {\large{Temperatura $T_{(^{\circ} C)}$}};
+	\node [below] at (1,0) {10};
+	\node [below] at (2,0) {20};
+	\node [below] at (3,0) {30};
+	\node [below] at (4,0) {40};
+	\node [below] at (5,0) {50};
+	\node [below] at (6,0) {60};
+	\node [below] at (7,0) {70};
+	\node [below] at (8,0) {80};
+	\node [below] at (9,0) {90};
+	\draw [very thick] (0,7.2) to [out=25,in=225] (3,9.5);
+	\node [above=2mm] at (1.5,8) {
+	\begin{rotate}{40}
+	\ce{NaNO3}
+	\end{rotate}};
+	\draw [very thick] (0,1.2) to [out=25,in=260] (5.2,9.5);
+	\node [above=2mm] at (3.5,4.5) {
+	\begin{rotate}{60}
+	\ce{KNO3}
+	\end{rotate}};	
+	\draw [very thick] (0,2.9) to [out=20,in=220] (9.5,8);
+	\node [above=2mm] at (6,5.5) {
+	\begin{rotate}{30}
+	\ce{NH4NO3}
+	\end{rotate}};	
+	\draw [very thick] (0,3.4) to [out=5,in=185] (9.5,3.9);
+	\node [above=1mm] at (5,3.5) {
+	\begin{rotate}{5}
+	\ce{NaC$\ell$}
+	\end{rotate}};
+	\draw [very thick] (0,2.4) to [out=350,in=170] (9.5,0.8);
+	\node [above=1mm] at (5.5,1.5) {
+	\begin{rotate}{350}
+	\ce{Ce2(SO4)3}
+	\end{rotate}};
+	\draw [very thick] (0,2) to [out=25,in=190] (9.5,6.1);
+	\node [above=0mm] at (8.5,6) {
+	\begin{rotate}{0}
+	\ce{KC$\ell$}
+	\end{rotate}};
+	\end{tikzpicture}
+		
+			\begin{enumerate}[label=\alph*)]	
+				\item Adicionam-se, separadamente, 40,0 g de cada um dos sais em 100 g de \ce{H2O}. À temperatura de
+40ºC, quais sais estão totalmente dissolvidos na água? E onde haverá precipitado?	\makeemptybox{2cm}
+
+				\item A menor quantidade de água necessária para dissolver 36 g de KC$\ell$ a 30ºC é: \makeemptybox{2cm}
+		
+				\item Cite a solução que apresenta maior massa de soluto em 100 g de água a 60ºC e calcule a quantidade de sal necessária para elaborar uma solução saturada de 300g de água. \makeemptybox{2cm}
+		
+				\item A massa de KC$\ell$ capaz de saturar 50 g de água, a 40ºC.\makeemptybox{2cm}
+				
+				\item Compare as solubilidades das substâncias \ce{KNO3} e \ce{NaNO3} a 68 ºC, abaixo e acima dessa
+temperatura. \makeemptybox{2cm}
+
+				\item Qual a massa de uma solução saturada de
+\ch{NaNO3} a 20 ºC obtida a partir de 500 g de \ch{H2O}?\makeemptybox{2cm}
+				
+				\item Qual a temperatura em que se obtém uma solução de 0,65 $\sfrac{g}{L}$?
+				\makeemptybox{2cm}
+				
+				\item Considere as soluções saturadas de (em 100g de água; densidade= 1\si{g/cm^3}) dos sais sulfato de cério, cloreto de sódio, cloreto de potássio e nitrato de amônio a 60$^{\circ}$C. coloque em ordem crescente de concentração em mol/L.
+				\makeemptybox{2cm}
+				
+				\item Considere as soluções saturadas de (em 100g de água; densidade= 1\si{g/cm^3}) dos sais \ce{Ce2(SO4)3}, \ce{NaC$\ell$}, KC$\ell$ e \ce{NH4NO3} a 60$^{\circ}$C. coloque em ordem crescente de concentração em mol/L.
+				\makeemptybox{2cm}
+				
+				\item Suponha que você possui um recipiente contendo 100g de solução saturada de KCKC$\ell$ a 70$^{\circ}$C. Se essa solução for resfriada a 40$^{\circ}$C, qual será a massa de precipitado que ficará depositada no fundo?
+				\makeemptybox{2cm}
+				
+				\item indique as curvas que apresentam uma diluição exotérmica.
+				\fillwithlines{8em}
+				
+			\end{enumerate}
+	
+	
+		\question Quatro tubos contêm 20 mL de água cada um a 20ºC. Coloca-se nesses tubos dicromato de potássio (\ce{K2Cr2O7}) nas seguintes quantidades:
+		
+		\begin{tabular}{ccccc}
+                       & Tubo A & Tubo B & Tubo C & Tubo D \\
+massa de sal (g) & 1      & 3      & 5      & 7     
+		\end{tabular}
+
+A solubilidade do sal, a 20ºC, é igual a 12,5g por 100 mL de água. Após agitação, em quais dos tubos coexistem, nessa temperatura, solução saturada e fase sólida? \makeemptybox{2cm}
+
+		\question O coeficiente de solubilidade de um sal é
+de 60 g por 100 g de água a 80 ºC.
+Determine a massa em gramas desse sal,
+nessa temperatura, necessária para saturar
+80 g de \ce{H2O}.\makeemptybox{2cm}
+
+		\question Num laboratório de Química é possível realizar a purificação de um determinado composto sólido através de uma técnica denominada de recristalização. O procedimento consiste na dissolução completa do composto junto com as impurezas, em uma certa quantidade de solvente quente, obtendo-se uma solução saturada. A seguir, deixa-se a solução resfriar lentamente e à medida que o coeficiente de solubilidade de composto diminui, este precipita (recristaliza) da solução fria. O gráfico abaixo mostra a curva de solubilidade de um composto X, em gramas por 100 gramas de água, em função da temperatura em $^{\circ}$C.
+		\begin{tikzpicture}
+	\draw [<->] (0,6) -- (0,0) -- (7,0);
+	\draw[dotted] (0,0) grid [step=.5] (6.5,5.5);
+	\node [above] at (0,6) {$S_{(\sfrac{g}{100g de H_2O})}$};
+	\node [left] at (0,1) {10};
+	\draw (-3pt,1) -- (3pt,1);
+	\node [left] at (0,2) {30};
+	\draw (-3pt,2) -- (3pt,2);
+	\node [left] at (0,3) {50};
+	\draw (-3pt,3) -- (3pt,3);
+	\node [left] at (0,4) {70};
+	\draw (-3pt,4) -- (3pt,4);
+	\node [left] at (0,5) {90};
+	\draw (-3pt,5) -- (3pt,5);
+	\node [below] at (7,0) {$T_{(^{\circ} C)}$};
+	\node [below] at (1,0) {10};
+	\draw (1,-3pt) -- (1,3pt);
+	\node [below] at (2,0) {20};
+	\draw (2,-3pt) -- (2,3pt);
+	\node [below] at (3,0) {30};
+	\draw (3,-3pt) -- (3,3pt);
+	\node [below] at (4,0) {40};
+	\draw (4,-3pt) -- (4,3pt);
+	\node [below] at (5,0) {50};
+	\draw (5,-3pt) -- (5,3pt);
+	\node [below] at (6,0) {60};
+	\draw (6,-3pt) -- (6,3pt);
+	\draw [very thick] (1,.5) to [out=22,in=235] (5.5,4.5);
+	\end{tikzpicture}
+
+			\begin{enumerate}[label=\alph*)]
+
+			\item Partindo-se de 200 g de uma mistura sólida do composto X com 90\% de pureza e utilizando o procedimento de recristalização, com 300 g de água, entre as temperaturas de 55$^{\circ}$C e 20$^{\circ}$C, qual a nova pureza prevista para o composto após a purificação? Considere que 10\% das impurezas precipitam juntamente do composto X ao final da recristalização. (apresente o resultado com uma casa decimal).
+\makeemptybox{2cm}
+			\item Qual a massa do composto X que permanece em solução, ao final do procedimento?
+\makeemptybox{2cm}
+			\end{enumerate}
+
+
+
+	\end{questions}	
+\end{multicols}
+\end{document}

@@ -1,0 +1,161 @@
+\documentclass[a4paper,12]{exam}
+\usepackage[right=0.75cm, left=0.75cm, top=0.75cm, bottom=1.5cm]{geometry}
+\usepackage[utf8]{inputenc} % para acentos
+\usepackage{amsmath, amsfonts, amssymb} %para forrmas matemáticas
+\usepackage{graphicx} %pacote para o uso de figuras
+\usepackage[portuguese]{babel} %para os rótulos automáticos fiquem em português
+\usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{fourier} %transforma a fonte utilizada no latex
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
+\usepackage{chemformula}
+\usepackage{xymtexpdf}%PDF Mode
+\usepackage{epic,carom} %pacote do colesterol
+\usepackage{xymtex}
+\usepackage{mathrsfs} %letras para notações matemáticas
+
+
+\author{Fred Klier}
+\newcommand{\class}{Química}
+\newcommand{\term}{2021}
+\newcommand{\examnum}{Exercícios de Química}
+\newcommand{\examdate}{\today}
+\newcommand{\timelimit}{90 minutos}
+\newcommand{\examauthor}{Fred Klier}
+
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{main}
+
+\pgfsetlayers{background,main}
+
+\pagestyle{headandfoot}
+\firstpageheader{}{}{}
+\runningheader{}{}{}
+\firstpagefooter{\class}{\examnum\ - Page \thepage\ of \numpages}{\term}
+\firstpagefootrule
+\runningfooter{\class}{\examnum\ - Page \thepage\ of \numpages}{\term}
+\runningfootrule
+
+\begin{document}
+
+\begin{tikzpicture}[remember picture, overlay] %remember picture permite chamar nodes que não estão no mesmo ambiente tikzpicture e overlay permite passar as margens definidas.
+
+	\node(logo) at (current page.north east) [anchor=north east,xshift=-0.25cm, yshift=-0.5cm] {\includegraphics[width=6cm]{cnsm.png}};
+	
+	\node(nomealuno) at (logo.north west) [anchor=north east]{{\textbf{Nome:}}{\makebox[11cm]{\hrulefill}\textbf{N$^{\circ}$:}}{\makebox[1cm]{\hrulefill}}};
+	
+	%\node(nota) at (logo.north west) [anchor=north east,xshift=-0.01cm, yshift=-0.5cm]{\textbf{Nota:}{\makebox[1cm]{\hrulefill}}};
+	
+	\node(dataprova) at (logo.north west) [anchor=north east,xshift=-0.1cm, yshift=-1cm]{Data de aplicação:{\makebox[.1cm]{}}{\makebox[0.6cm]{\hrulefill}}/{\makebox[0.6cm]{\hrulefill}}/\term};
+	
+	\node(datadev) at (logo.north west) [anchor=north east,xshift=-0.01cm, yshift=-1.6cm]{Data da devolução:{\makebox[.1cm]{}}{{\makebox[0.6cm]{\hrulefill}}/{\makebox[0.6cm]{\hrulefill}}/\term}};
+	
+	%\node(valor) at (nota.north west) [anchor=north east,xshift=0cm, yshift=0cm] {\textbf{Valor: 30} {\makebox[1.7cm]{}}};
+	
+	\node(turma) at (logo.north west) [anchor=north east,xshift=-9.94cm, yshift=-.5cm]{2$^{\circ}$ Ano do Ensino médio};
+	
+	\node(prova) at (turma.south west) [anchor=north west,xshift=0cm, yshift=-.1cm]{\examnum};
+	
+	\node(professor) at (datadev.north west) [anchor=north east,xshift=-4.8cm, yshift=0cm]{Professor(a): \examauthor};
+
+
+\end{tikzpicture}
+
+\vspace{1.2cm}
+\rule{18cm}{1pt}
+%\fbox{$[substância] =\mathscr{M}=\frac{n_1}{V_{(l)}} =\frac{m_1}{M_1  \ast  V_{(l)}}$} \\
+
+\begin{center}
+\begin{Huge}
+\fbox{
+\schemestart[0.5,1.0,thick]
+		reagentes
+		\arrow{<->[\small{ catalisador}][\large{$\Delta $}]}
+		produtos
+		\schemestop
+}
+\end{Huge}
+\end{center}
+
+
+\begin{multicols}{2}
+
+
+\begin{itemize}
+		\item \ce{NaCl} Representação das substâncias.\par
+		 \item \ce{KCr(SO4)2*12H2O} representação das substâncias hidratadas.
+		
+		\item Classificação de reações \par
+			\begin{itemize}
+		     \item adição ou síntese \ce{$A + B$ <=>> $AB$} \par
+			 \item análise ou decomposição. \ce{$AB$ <<=>$A+B$} \par
+			 \item simples troca ou deslocamento \ce{$AC + B$ -> $AB + C$} \par
+		     \item dupla troca \ce{$AB + CD$ -> $AD + CB$} \par
+			\end{itemize}
+		\end{itemize}
+
+
+			\begin{questions}
+			  \question[10]{} Classifique as reações a seguir:
+			  	\begin{choices}
+				  \choice{} \ce{2H2SO4 -> 2H2O + 2SO2 + O2}
+				  \choice{} \ce{3KOH_{(aq)} + H3PO4_{(aq)} -> K3PO4_{(aq)} + 3H2O_{(l)}}
+				  \choice \ce{2 Al_{(s)} + 3 H2SO4_{(aq)} -> 3 H2_{(g)} + Al2(SO4)3 _{(aq)}}
+				  \choice{} \ce{ 2 Al_{(s)} + 3Cu(NO3)2_{(aq)} -> 3Cu_{(s)} + 2Al(NO3)3_{(aq)}}
+				  \choice{} \ce{2 Al_{(s)} + 3Br2_{(g)} -> 2 AlBr3_{(s)}}
+				  \choice{} \ce{C12H22O11_{(s)} -> 12 C_{(s)} + 11 H2O_{(l)}}
+				\end{choices}
+
+				\question[10]{Considere as equações:}
+
+				\begin{enumerate}
+				\item \ce{Zn + 2 HCl -> ZnCl2 + H2}
+				\item \ce{P2O5 + 3 H2O -> 2 H3PO4}
+				\item \ce{AgNO3 + NaCl -> AgCl + NaNO3}
+				\item \ce{CaO + CO2 ->CaCO3}
+				\item \ce{ 2H2O -> 2 H2 + O2}
+				\end{enumerate}
+
+				É considerada uma reação de decomposição: \\
+				\begin{oneparchoices}
+
+				  \choice 1
+				  \choice 2
+				  \choice 3
+				  \choice 4
+				  \choice 5
+				\end{oneparchoices}
+
+\question[10]{}Observe as reações abaixo:
+{
+  \renewcommand*\thechoice{\Roman{choice}}
+  \renewcommand*\choicelabel{\thechoice.}
+  \begin{choices}
+\choice{} \ce{Zn + Pb(NO3)2 ->Zn(NO3)2 + Pb}
+\choice{} \ce{FeS + 2 HCl ->  FeCl2 + H2S}
+\choice{} \ce{2 NaNO3 ->2 NaNO2 + O2}
+\choice{} \ce{N2 + 3 H2 -> 2 NH3}
+\end{choices}
+}
+A sequência que representa, respectivamente, reações de síntese,
+análise, simples troca e dupla troca são
+{
+  \renewcommand*\thechoice{\alph{choice}}
+  \renewcommand*\choicelabel{(\thechoice)}
+
+\begin{choices}
+\choice{} I, II, III e IV
+\choice{} III, IV, I e II
+\choice{} IV, III, I e II
+\choice{} I, III, II e IV
+\choice{} II, I, IV e III
+\end{choices}
+}
+			\end{questions}
+			
+\end{multicols}
+\end{document}
