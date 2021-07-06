@@ -12,11 +12,16 @@
 \usepackage{tabularx}
 \usepackage{chemfig}
 \usepackage[version=4]{mhchem}
-\usepackage{chemformula}
-\usepackage{xymtexpdf}%PDF Mode
+\usepackage{chemformula} %fórmula químicas com \ch
+\usepackage{elements} %para a distribuição eletrônica.
+\usepackage{xymtexpdf}%PDF Mode para moléculas complexas
 \usepackage{epic,carom} %pacote do colesterol
-\usepackage{xymtex}
-\usepackage{mathrsfs}
+\usepackage{xymtex} %desenha fórmulas químicas estruturais
+\usepackage{enumitem} %para trocar os rótulos dos itens
+\usepackage{siunitx} %para usar unidades do sistema intenacional
+\usepackage{mathrsfs} %letras para notações matemática
+\usepackage{xfrac} %para ter opções com frações (sfrac)
+\usepackage{rotating} %para rodar o texto
 
 
 \author{Fred Klier}
@@ -82,27 +87,42 @@ Exercícios
 	\begin{questions}
 		
 	
-			\question Qual a Concentração de íons sulfato formados em uma solução 			de 1 litro com 0,1 mol de $BaSO_4 (K_s = 1,0 \cdot 10^{-10})$?
+			\question Qual a Concentração de íons sulfato formados em uma solução 			de 1 litro com 0,1 mol de \ce{BaSO4} $(K_s = 1,0 \times 10^{-10})$?
 			\begin{oneparchoices}
-					\choice $1,0 \cdot 10^{-2}$
-					\choice $1,0 \cdot 10^{-3}$
-					\choice $1,0 \cdot 10^{-4}$
-					\choice $1,0 \cdot 10^{-5}$
-					\choice $1,0 \cdot 10^{-6}$
+					\choice $1,0 \times 10^{-2}$
+					\choice $1,0 \times 10^{-3}$
+					\choice $1,0 \times 10^{-4}$
+					\choice $1,0 \times 10^{-5}$
+					\choice $1,0 \times 10^{-6}$
 			\end{oneparchoices}
 
-			\question Qual a Concentração de íons sulfato formados em uma solução 			de 1 litro com 1 mol de $Ca_3(PO_4)_2 (K_s = 1,0 \cdot 10^{-25})$?\\
+			\question Qual a Concentração de íons sulfato formados em uma solução 			de 1 litro com 1 mol de \ce{Ca3(PO4)2} $(K_s = 1,0 \times 10^{-25})$?\\
 				\begin{oneparchoices}
-						\choice $1,0 \cdot 10^{-6}$
-						\choice $1,0 \cdot 10^{-5}$
-						\choice $1,0 \cdot 10^{-4}$
-						\choice $1,0 \cdot 10^{-3}$
-						\choice $1,0 \cdot 10^{-2}$
+						\choice $1,0 \times 10^{-6}$
+						\choice $1,0 \times 10^{-5}$
+						\choice $1,0 \times 10^{-4}$
+						\choice $1,0 \times 10^{-3}$
+						\choice $1,0 \times 10^{-2}$
 				\end{oneparchoices}
 
-			\question Determine 
-			
-			\question mais uma questão.
+			\question Uma reação química atinge o equilíbrio químico quando:
+				\begin{enumerate}[label=\alph*)]
+				  \item ocorre simultaneamente nos sentidos direto e inverso.
+				  \item as velocidades das reações direta e inversa são iguais.
+				  \item os reagentes são totalmente consumidos.
+				  \item a temperatura do sistema é igual à do ambiente.
+				  \item a razão entre as concentrações de reatantes e produtos é unitária.
+				\end{enumerate}
+
+				\question Escreva a expressão da constante de equilíbrio em termos de concentração $(K_c)$ dos seguintes equilíbrios:
+				\begin{enumerate}[label=\alph*)]
+				  \item \ce{2 NO_{(g)} + O2_{(g)} <--> 2 NO2_{(g)}}
+				  \item \ce{PCl5_{(g)} <--> PCl3_{(g)}+ Cl2_{(g)}}
+				  \item \ce{4 HCl_{(g)} + O2_{(g)} <--> 2 H2O_{(g)} + 2 Cl2_{(g)}}
+				  \item \ce{C_{(s)} + H2O_{(g)} <--> CO_{(g)} + H2_{(g)}}
+				  \item \ce{Mg_{(s)} + 2 H^+_{(aq)} <--> Mg^{2+}_{(aq)} + H2_{(g)} }
+				  \item \ce{CrO4^{2–}_{(aq)} + 2 H^+_{(aq)} <--> Cr2O7^{2–}_{(aq)} + H2O_{(l)}}
+				\end{enumerate}
 		
 		
 		
