@@ -13,7 +13,7 @@
 \usepackage{chemfig}
 \usepackage{isotope}%para escrever os isótopos
 \usepackage[version=4]{mhchem} %bioquímica
-\usepackage{chemformula} %fórmula químicas
+\usepackage{chemformula} %fórmula químicas com \ch
 \usepackage{elements} %para a distribuição eletrônica.
 \usepackage{xymtexpdf}%PDF Mode para moléculas complexas
 \usepackage{epic,carom} %pacote do colesterol
@@ -21,6 +21,8 @@
 \usepackage{enumitem} %para trocar os rótulos dos itens
 \usepackage{siunitx} %para usar unidades do sistema intenacional
 \usepackage{mathrsfs} %letras para notações matemática
+\usepackage{xfrac} %para ter opções com frações (sfrac)
+\usepackage{rotating} %para rodar o texto
 
 
 \author{Fred Klier}
@@ -86,7 +88,8 @@
 	  \question As soluções químicas são amplamente utilizadas tanto em nosso cotidiano como emlaboratórios. Uma delas, solução aquosa de sulfato de cobre penta-hidratado, \ce{CuSO4.5H2O}, a 1\%, é usado como reagente analítico. De posse de uma solução estoque de 1 mol/L com densidade de 2,0 g/ml quanto deve ser usado de solução estoque para prepararmos 20 litros dessa solução a 1\% m/m é: (dados: Cu=64; S=32; O=16; H=1)
 	  \makeemptybox{2cm}
 
-	\question O consumo de água com mais de 10 ppm (partes por milhão) de nitratosnão é recomendável, segundo a Organização Mundial de Saúde. Sabendo-se que a densidade daágua é de aproximadamente 1,0 grama por mililitro, em 1,0 metro cúbico de água (1 000 litros)a quantidade máxima de nitratos, aceitável pela OMS, seria de:
+		\question O consumo de água com mais de 10 ppm (partes por milhão) de nitratosnão é recomendável, segundo a Organização Mundial de Saúde. Sabendo-se que a densidade daágua é de aproximadamente 1,0 grama por mililitro, em 1,0 metro cúbico de água (1 000 litros)a quantidade máxima de nitratos, aceitável pela OMS, seria de:
+		\makeemptybox{2cm}
 	
 	\question A 20$^{\circ}$C uma solução aquosa de hidróxido de sódio tem uma densidade de 1,04 \si{g/cm^3} eé 0,946 mol/L em NaOH. A quantidade de matéria e a massa de hidróxido de sódio presentes em 50,0 \si{cm^3}dessa solução são, respectivamente:\makeemptybox{2cm}
 	
@@ -98,8 +101,27 @@
 		\item 10 mols de NaCl em 90 mols de água.
 	\end{enumerate}
 	Foi perguntado qual das soluções tem concentração 10\% em massa de cloreto de sódio. E um aluno respondeu que era o item I. Diga se ele está certo ou errado e justifique a sua resposta com números. \makeemptybox{2cm}
-	
-	
+
+	\question Aqueceu-se um frasco contendo uma solução aquosa de \ce{CuSO4} $5 \times 10^{-2}$ mol/L. O aquecimento foi interrompido quando restavam 100 mL de uma solução aquosa de \ce{CuSO4} 1,2 mol/L. Determine o volume da solução inicial e o volume da água perdida pelo aquecimento. \makeemptybox{2cm}
+
+	\question A uma amostra de 100 mL de NaOH de concentração 20 g/L foi adicionada água suficiente para completar 500 mL. A concentração, em g/L, dessa nova solução é igual a: \makeemptybox{2cm}
+
+	\question Um dos grandes problemas das navegações do século XVI referia-se à limitação de água potável que era possível transportar numa embarcação. Imagine uma situa-ção de emergência em que restaram apenas 300 litros (L) de água potável (considere-a completamente isenta de eletrólitos). A água do mar não é apropriada para o consumo devido à grande concentração de NaCl (25 g/L), porém o soro fisiológico (10 g NaCl/L) é. Se os navegantes tivessem conhecimento da composição do soro fisiológico, poderiam usar a água potável para diluir água do mar de modo a obter soro e assim teriam um volume maior de líquido para beber.
+		\begin{enumerate}[label=\alph*)]
+			\item Que volume total de soro seria obtido com a diluição se todos os 300 litros de água potável fossem usados para este fim?
+			\item Considerando-se a presença de 50 pessoas na embarcação e admitindo-se uma distribuição eqüitativa do soro, quantos gramas de NaCl teriam sido ingeridos por
+cada pessoa?
+			\item Uma maneira que os navegadores usavam para obter água potável adicional era recolher água de chuva. Considerando-se que a água da chuva é originária, em grande parte, da água do mar, como se explica que ela possa ser usada como água potável?
+		\end{enumerate}
+
+		\question Se adicionarmos 80 mL de água a 20 mL de uma solução 0,1 mol/L de hidróxido de potássio, obteremos uma solução de concentração molar igual a:\makeemptybox{2cm}
+
+		\question Diluição é uma operação muito empregada no nosso dia-a-dia, quando, por exemplo, preparamos um refresco a partir de um suco concentrado. \\
+		Considere 100 mL de determinado suco em que a concentração do soluto seja de 0,4 mol/L. O volume de água, em mL, que deverá ser acrescentado para que a concentração do soluto caia para 0,04 mol/L, será de: \makeemptybox{2cm}
+
+
+
+
 	 \end{questions}
 \end{multicols}
 \end{document}

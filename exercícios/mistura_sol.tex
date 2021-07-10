@@ -1,0 +1,166 @@
+\documentclass[a4paper,12]{exam}
+\usepackage[right=0.75cm, left=0.75cm, top=0.75cm, bottom=1.5cm]{geometry}
+\usepackage[utf8]{inputenc} % para acentos
+\usepackage{amsmath, amsfonts, amssymb} %para forrmas matemáticas
+\usepackage{graphicx} %pacote para o uso de figuras
+\usepackage[portuguese]{babel} %para os rótulos automáticos fiquem em português
+\usepackage{adjustbox}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{fourier} %transforma a fonte utilizada no latex
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{chemfig}
+\usepackage{isotope}%para escrever os isótopos
+\usepackage[version=4]{mhchem} %bioquímica
+\usepackage{chemformula} %fórmula químicas com \ch
+\usepackage{elements} %para a distribuição eletrônica.
+\usepackage{xymtexpdf}%PDF Mode para moléculas complexas
+\usepackage{epic,carom} %pacote do colesterol
+\usepackage{xymtex} %desenha fórmulas químicas estruturais
+\usepackage{enumitem} %para trocar os rótulos dos itens
+\usepackage{siunitx} %para usar unidades do sistema intenacional
+\usepackage{mathrsfs} %letras para notações matemática
+\usepackage{xfrac} %para ter opções com frações (sfrac)
+\usepackage{rotating} %para rodar o texto
+
+
+\author{Fred Klier}
+\newcommand{\class}{Química}
+\newcommand{\term}{2021}
+\newcommand{\examnum}{Exercícios de Química}
+\newcommand{\examdate}{\today}
+\newcommand{\timelimit}{90 minutos}
+\newcommand{\examauthor}{Fred Klier}
+
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{main}
+
+\pgfsetlayers{background,main}
+
+\pagestyle{headandfoot}
+\firstpageheader{}{}{}
+\runningheader{}{}{}
+\firstpagefooter{\class}{\examnum\ - Page \thepage\ of \numpages}{\term}
+\firstpagefootrule
+\runningfooter{\class}{\examnum\ - Page \thepage\ of \numpages}{\term}
+\runningfootrule
+
+\begin{document}
+
+\begin{tikzpicture}[remember picture, overlay] %remember picture permite chamar nodes que não estão no mesmo ambiente tikzpicture e overlay permite passar as margens definidas.
+
+	\node(logo) at (current page.north east) [anchor=north east,xshift=-0.25cm, yshift=-0.5cm] {\includegraphics[width=6cm]{cnsm.png}};
+
+	\node(nomealuno) at (logo.north west) [anchor=north east]{{\textbf{Nome:}}{\makebox[11cm]{\hrulefill}\textbf{N$^{\circ}$:}}{\makebox[1cm]{\hrulefill}}};
+
+	%\node(nota) at (logo.north west) [anchor=north east,xshift=-0.01cm, yshift=-0.5cm]{\textbf{Nota:}{\makebox[1cm]{\hrulefill}}};
+
+	\node(dataprova) at (logo.north west) [anchor=north east,xshift=-0.1cm, yshift=-1cm]{Data de aplicação:{\makebox[.1cm]{}}{\makebox[0.6cm]{\hrulefill}}/{\makebox[0.6cm]{\hrulefill}}/\term};
+
+	\node(datadev) at (logo.north west) [anchor=north east,xshift=-0.01cm, yshift=-1.6cm]{Data da devolução:{\makebox[.1cm]{}}{{\makebox[0.6cm]{\hrulefill}}/{\makebox[0.6cm]{\hrulefill}}/\term}};
+
+	%\node(valor) at (nota.north west) [anchor=north east,xshift=0cm, yshift=0cm] {\textbf{Valor: 30} {\makebox[1.7cm]{}}};
+
+	\node(turma) at (logo.north west) [anchor=north east,xshift=-9.94cm, yshift=-.5cm]{2$^{\circ}$ Ano do Ensino médio};
+
+	\node(prova) at (turma.south west) [anchor=north west,xshift=0cm, yshift=-.1cm]{\examnum};
+
+	\node(professor) at (datadev.north west) [anchor=north east,xshift=-4.8cm, yshift=0cm]{Professor(a): \examauthor};
+
+
+\end{tikzpicture}
+
+\vspace{1.2cm}
+\rule{18cm}{1pt}
+
+
+\begin{multicols}{2}
+\begin{questions}
+
+  \question Um volume de 200 mL de uma solução aquosa de glicose (\ce{C6H12O6}) de concentração igual a 60 g/L foi misturada a 300 mL de uma solução de glicose de concentração igual a 120 g/L. Determine a concentração, em g/L, da solução final.\makeemptybox{2cm}
+
+  \question Uma solução aquosa 2 mol/L de NaCl de volume 50 mL foi misturada a 100 mL de uma solução aquosa de NaCl 0,5 mol/L. Calcule a concentração em mol/L da solução resultante. \makeemptybox{2cm}
+
+  \question A salinidade da água de um aquário para peixes marinhos, expressa em concentração de NaCl, é 0,08 mol/L. Para corrigir essa salinidade, foram adicionados 2 litros de uma solução 0,52 mol/L de NaCl a 20 litros da água deste aquário. Qual a concentração final de NaCl multiplicada por 100?
+  \makeemptybox{2cm}
+
+  \question Para originar uma solução de concentração igual a 120 g/L, qual é o volume, em litros, de uma solução aquosa de CaCl2 de concentração 200 g/L que deve ser misturado a 200 mL de uma outra solução aquosa de CaCl2 de concentração igual a 100 g/L? \makeemptybox{2cm}
+
+  \question O volume de uma solução de hidróxido de sódio 1,5 mol/L que deve ser misturado a 300 mL de uma solução 2 mol/L da mesma base, a fim de torná-la solução 1,8 mol/L, é:\makeemptybox{2cm}
+
+  \question Um químico precisa preparar 80 mL de uma solução ácida 3,0 mol/L, misturando duas soluções de ácido forte HX: uma com concentração 5,0 M e outra, 2,5 M. O volume necessário da solução 5,0 M é:\makeemptybox{2cm}
+
+  \question Em um balão volumétrico de 1000 mL, juntaram-se 250 mL de uma solução 2,0 mol/L de ácido sulfúrico com 300 mL de uma solução 1,0 mol/L do mesmo ácido e completou-se o volume até 1 000 mL com água destilada. Determine a concentração em mol da solução resultante. \makeemptybox{2cm}
+
+  \question A, B e C são recipientes que contêm, respectivamente, 10 g de NaCl em 50 mL de solução aquosa, 0,20 mol de NaCl em 100 mL de solução aquosa e 500 mL de solução aquosa de \ce{MgCl2} cuja concentração é 1 mol/L.\\
+(Dados: M (Na) = 23 g/mol; M (Mg) = 24,3 g/mol; M (Cl) = 35,5 g/mol)\\
+  Determine as concentrações, em mol/L:
+  \begin{enumerate}[label=\alph*)]
+\item da solução contida no recipiente A; \makeemptybox{2cm}
+\item dos íons cloreto após misturar as soluções contidas nos recipientes B e C;\makeemptybox{2cm}
+\item da solução resultante da mistura das soluções A e B. \makeemptybox{2cm}
+  \end{enumerate}
+
+  \begin{center}
+\textbf{Mistura de solução com reações}
+  \end{center}
+
+  \question Um sistema é formado pela mistura de 0,15 L de uma solução aquosa 1,0 mol/L de HCl e 250 mL de uma solução aquosa 2,0 mol/L de NaOH. Responda às questões a respeito desse sistema:
+  \begin{enumerate}[label=\alph*)]
+    \item A solução final (sistema) tem caráter ácido, básico ou neutro? Justifique. \fillwithlines{8em}
+    \item Qual a molaridade do reagente em excesso, caso exista, na solução final? \fillwithlines{4em}
+    \item Qual é a molaridade do sal produzido na solução final? \fillwithlines{4em}
+  \end{enumerate}
+ \makeemptybox{2cm}
+
+  \question Calcule o volume, em litros, de uma solução aquosa de ácido clorídrico de concentração 1,00 mol/L necessário para neutralizar 20,0 mL de uma solução aquosa de hidróxido de sódio de concentração 3,00 mol/L. \makeemptybox{2cm}
+
+  \question O hidróxido de sódio (NaOH) neutraliza completamente o ácido sulfúrico (\ce{H2SO4}), de acordo com a equação:
+  \begin{center}
+    \ce{2 NaOH + H2SO4 <--> Na2SO4 + 2 H2O}
+    \end{center}
+O volume, em litros, de uma solução de \ce{H2SO4}, 1,0 mol/L que reage com 0,5 mol de
+NaOH é:\makeemptybox{2cm}
+
+\question Necessita-se preparar uma solução de NaOH 0,1 mol/L. Dadas as massas atômicas: Na = 23, O = 16 e H = 1, pergunta-se:
+Justifique suas respostas mostrando os cálculos envolvidos.
+    \begin{enumerate}[label=\alph*)]
+        \item Qual é a massa de NaOH necessária para se preparar 500 mL desta solução? \makeemptybox{2cm}
+        \item A partir da solução 0,1 mol/L de NaOH, como é possível obter 1 L de solução NaOH, porém, na concentração 0,01 mol/L? \makeemptybox{2cm}
+        \item Qual o volume de HCl 0,05 mol/L necessário para neutralizar 10 mL de solução 0,1 mol/L de NaOH? \makeemptybox{2cm}
+    \end{enumerate}
+
+    \question O eletrólito empregado em baterias de automóvel é uma solução aquosa de ácido sulfúrico. Uma amostra de 7,50 mililitros da solução de uma bateria requer 40,0 mililitros de hidróxido de sódio 0,75 M para sua neutralização completa.
+    \begin{enumerate}[label=\alph*)]
+\item Calcule a concentração molar do ácido na solução da bateria. \makeemptybox{2cm}
+\item Escreva a equação balanceada da reação de neutralização total do ácido, fornecendo os nomes dos produtos formados. \makeemptybox{2cm}
+    \end{enumerate}
+
+    \question Faça o que se pede abaixo:\\
+    \begin{enumerate}[label=\Roman*-]
+\item Calcule a massa em gramas de hidróxido de sódio (NaOH) necessária para preparar 50,0 mL de solução 0,1 mol/L. (massa molar do NaOH = 40 g/mol)
+\item Misturando a solução do item a com 50,0 mL de solução HCl 0,3 mol/L, qual será a molaridade do sal formado e do reagente em excesso?
+    \end{enumerate}
+    \makeemptybox{2cm}
+
+
+    \question Calcule a massa de NaOH necessária para neutralizar totalmente uma solução de 2 L de HBr 0,4 mol/L.\\ (massa molar do NaOH = 40 g mol–1)\makeemptybox{2cm}
+
+
+    \question Um tablete de antiácido contém 0,450 g de hidróxido de magnésio. Determine o volume de solução de HCl 0,100 mol/L (aproximadamente a concentração de ácido no estômago), que corresponde à neutralização total do tablete. \\ (massa molar de \ce{Mg(OH)2} = 58 g/mol)
+\makeemptybox{2cm}
+
+
+    \question Um lote originado da produção de vinagre é submetido ao controle de qualidade, quanto ao teor de ácido acético (\ce{CH3COOH}). Uma amostra de 50 mL do vinagre é titulada com hidróxido de sódio (NaOH) aquoso. São consumidos 10 mL de NaOH 0,01 mol/L para encontrar o ponto final de titulação com fenolftaleína. Calcule a concentração em mol/L de ácido acético no vinagre.
+    \begin{center}
+      \ce{H3CCOOH + NaOH <--> H3CCOONa + H2O}
+    \end{center}
+   \makeemptybox{2cm}
+
+    \question Uma remessa de soda cáustica está sob suspeita de estar adulterada. Dispondo de uma amostra de 0,5 grama foi preparada uma solução aquosa de 50 mL. Esta solução foi titulada, sendo consumidos 20 mL de uma solução 0,25 mol/L de ácido sulfúrico. Determine a porcentagem de impureza existente na soda cáustica, admitindo que não ocorra reação entre o ácido e as impurezas. \\ (massa molar do NaOH = 40 g mol–1)
+\makeemptybox{2cm}
+
+\end{questions}
+\end{multicols}
+\end{document}
