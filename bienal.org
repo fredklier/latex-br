@@ -1,0 +1,161 @@
+#+TITLE: Bienal
+#+Author: Fred Klier
+
+* 1º ano
+
+|-------+--------+------+-------------------------------------------------------------------------------------|
+| livro | semana | aula | assunto                                                                             |
+|-------+--------+------+-------------------------------------------------------------------------------------|
+|     1 |      1 |    1 | Símbolos e fórmulas; substâncias simples, compostas e misturas                      |
+|     1 |      1 |    2 | Símbolos e fórmulas; substâncias simples, compostas e misturas                      |
+|     1 |      1 |    3 | Transformações físicas e químicas e a equação química                               |
+|     1 |      2 |    4 | Transformações físicas e químicas e a equação química                               |
+|     1 |      2 |    5 | Primeira noção de balanceamento da equação química                                  |
+|     1 |      2 |    6 | Mudanças de estado físico e diagramas de aquecimento                                |
+|     1 |      3 |    7 | Mudanças de estado físico e diagramas de aquecimento                                |
+|     1 |      3 |    8 | Fases e componentes                                                                 |
+|     1 |      3 |    9 | Fases e componentes                                                                 |
+|     1 |      4 |   10 | Separação de misturas heterogêneas                                                  |
+|     1 |      4 |   11 | Separação de misturas homogêneas (soluções)                                         |
+|     1 |      4 |   12 | A evolução dos modelos atômicos                                                     |
+|     1 |      5 |   13 | Características atômicas                                                            |
+|     1 |      5 |   14 | Semelhanças atômicas                                                                |
+|     1 |      5 |   15 | Modelo atômico de Bohr                                                              |
+|     1 |      6 |   16 | Distribuições eletrônicas de átomos                                                 |
+|     1 |      6 |   17 | Distribuições eletrônicas de átomos                                                 |
+|     1 |      6 |   18 | Distribuições eletrônicas de íons                                                   |
+|     2 |      7 |   19 | A Tabela Periódica                                                                  |
+|     2 |      7 |   20 | A Tabela Periódica                                                                  |
+|     2 |      7 |   21 | Propriedades periódicas                                                             |
+|     2 |      8 |   22 | Ligação iônica                                                                      |
+|     2 |      8 |   23 | Ligação iônica                                                                      |
+|     2 |      8 |   24 | Ligação covalente                                                                   |
+|     2 |      9 |   25 | Ligação covalente: construção de fórmulas estruturais a partir da fórmula molecular |
+|     2 |      9 |   26 | Ligação metálica                                                                    |
+|     2 |      9 |   27 | Geometria molecular                                                                 |
+|     2 |     10 |   28 | Polaridade de ligações e moléculas                                                  |
+|     2 |     10 |   29 | Polaridade de ligações e moléculas                                                  |
+|     2 |     10 |   30 | Atrações intermoleculares                                                           |
+|     2 |     11 |   31 | Atrações intermoleculares                                                           |
+|     2 |     11 |   32 | Dissociação e ionização: conceito de Arrhenius                                      |
+|     2 |     11 |   33 | Dissociação e ionização: conceito de Arrhenius                                      |
+|     2 |     12 |   34 | Ácidos: nomenclatura e classificação                                                |
+|     2 |     12 |   35 | Ácidos: nomenclatura e classificação                                                |
+|     2 |     12 |   36 | Ácidos: propriedades químicas                                                       |
+|     3 |     13 |   37 | Bases ou hidróxidos                                                                 |
+|     3 |     13 |   38 | Bases ou hidróxidos                                                                 |
+|     3 |     13 |   39 | Sais: formulação e nomenclatura                                                     |
+|     3 |     14 |   40 | Sais: formulação e nomenclatura                                                     |
+|     3 |     14 |   41 | Reações de neutralização total                                                      |
+|     3 |     14 |   42 | Reações de neutralização total                                                      |
+|     3 |     15 |   43 | Óxidos e nomenclatura                                                               |
+|     3 |     15 |   44 | Óxidos básicos e óxidos neutros                                                     |
+|     3 |     15 |   45 | Óxidos ácidos                                                                       |
+|     3 |     16 |   46 | Propriedades e aplicações de alguns óxidos                                          |
+|     3 |     16 |   47 | Tipos de reação                                                                     |
+|     3 |     16 |   48 | Condições para reação de deslocamento                                               |
+|     3 |     17 |   49 | Condições para reação de dupla-troca                                                |
+|     3 |     17 |   50 | Massa atômica e massa molecular                                                     |
+|     3 |     17 |   51 | Massa atômica e massa molecular                                                     |
+|     3 |     18 |   52 | O mol e a constante de Avogadro                                                     |
+|     3 |     18 |   53 | Massas molares (M)                                                                  |
+|     3 |     18 |   54 | Massas molares (M)                                                                  |
+|     4 |     19 |   55 | Determinação de fórmula porcentual                                                  |
+|     4 |     19 |   56 | Determinação de fórmula mínima e fórmula molecular                                  |
+|     4 |     19 |   57 | Determinação de fórmula mínima e fórmula molecular                                  |
+|     4 |     20 |   58 | Variáveis de estado de um gás                                                       |
+|     4 |     20 |   59 | A transformação isotérmica: lei de Boyle                                            |
+|     4 |     20 |   60 | A lei isovolumétrica de Charles e Gay-Lussac                                        |
+|     4 |     21 |   61 | A lei isobárica de Charles e Gay-Lussac                                             |
+|     4 |     21 |   62 | A equação geral dos gases                                                           |
+|     4 |     21 |   63 | A relação entre as variáveis de estado de um gás (P, V e T) e a quantidade de gás   |
+|     4 |     22 |   64 | A relação entre as variáveis de estado de um gás (P, V e T) e a quantidade de gás   |
+|     4 |     22 |   65 | As leis ponderais                                                                   |
+|     4 |     22 |   66 | As leis ponderais                                                                   |
+|     4 |     23 |   67 | Cálculos estequiométricos                                                           |
+|     4 |     23 |   68 | Cálculos estequiométricos                                                           |
+|     4 |     23 |   69 | Cálculos estequiométricos com reações consecutivas                                  |
+|     4 |     24 |   70 | Cálculos estequiométricos com rendimento de reação                                  |
+|     4 |     24 |   71 | Cálculos estequiométricos com reagente limitante                                    |
+|     4 |     24 |   72 | Cálculos estequiométricos com pureza de reagente                                    |
+|-------+--------+------+-------------------------------------------------------------------------------------|
+
+
+* 2º ano
+
+|---------+--------+------+---------------------------------------------------|
+| Caderno | Semana | Aula | Assunto                                           |
+|---------+--------+------+---------------------------------------------------|
+|       5 |      1 |    1 | Soluções: conceito e classificação                |
+|       5 |      1 |    2 | Concentração comum (m/V) e densidade              |
+|       5 |      1 |    3 | Concentração comum (m/V) e densidade              |
+|       5 |      2 |    4 | Concentrações (m/m): porcentagem, ppm e ppb       |
+|       5 |      2 |    5 | Concentração em mol/L                             |
+|       5 |      2 |    6 | Concentração em mol/L                             |
+|       5 |      3 |    7 | Relações entre tipos de concentração              |
+|       5 |      3 |    8 | Relações entre tipos de concentração              |
+|       5 |      3 |    9 | Diluição das soluções                             |
+|       5 |      4 |   10 | Diluição das soluções                             |
+|       5 |      4 |   11 | Mistura de soluções de mesmo soluto               |
+|       5 |      4 |   12 | Termoquímica: poder calórico dos alimentos        |
+|       5 |      5 |   13 | Calor de reação e entalpia                        |
+|       5 |      5 |   14 | Calor de reação e entalpia                        |
+|       5 |      5 |   15 | Entalpia de formação e ΔH de formação             |
+|       5 |      6 |   16 | Entalpia de formação e ΔH de formação             |
+|       5 |      6 |   17 | Entalpia de combustão                             |
+|       5 |      6 |   18 | Cálculo de ΔH da reação pela lei de Hess          |
+|       6 |      7 |   19 | Exercícios de lei de Hess                         |
+|       6 |      7 |   20 | Energia de ligação                                |
+|       6 |      7 |   21 | Energia de ligação                                |
+|       6 |      8 |   22 | Introdução à oxirredução: número de oxidação      |
+|       6 |      8 |   23 | Introdução à oxirredução: número de oxidação      |
+|       6 |      8 |   24 | Agente oxidante e redutor                         |
+|       6 |      9 |   25 | Balanceamento de equações químicas de oxirredução |
+|       6 |      9 |   26 | Balanceamento de equações químicas de oxirredução |
+|       6 |      9 |   27 | Pilhas: conceitos iniciais                        |
+|       6 |     10 |   28 | Pilhas: conceitos iniciais                        |
+|       6 |     10 |   29 | Potenciais de eletrodos                           |
+|       6 |     10 |   30 | Potenciais de eletrodos                           |
+|       6 |     11 |   31 | Espontaneidade de reações                         |
+|       6 |     11 |   32 | Espontaneidade de reações                         |
+|       6 |     11 |   33 | Eletrólise                                        |
+|       6 |     12 |   34 | Eletrólise                                        |
+|       6 |     12 |   35 | Leis de Faraday                                   |
+|       6 |     12 |   36 | Leis de Faraday                                   |
+|       7 |     13 |   37 | Cinética química – velocidade média               |
+|       7 |     13 |   38 | Cinética química – velocidade média               |
+|       7 |     13 |   39 | Energia de ativação                               |
+|       7 |     14 |   40 | Fatores que influem na rapidez da reação          |
+|       7 |     14 |   41 | Fatores que influem na rapidez da reação          |
+|       7 |     14 |   42 | Lei da velocidade                                 |
+|       7 |     15 |   43 | Lei da velocidade                                 |
+|       7 |     15 |   44 | Equilíbrio químico – Introdução                   |
+|       7 |     15 |   45 | Equilíbrio químico – A constante de equilíbrio    |
+|       7 |     16 |   46 | Equilíbrio químico – A constante de equilíbrio    |
+|       7 |     16 |   47 | Equilíbrios heterogêneos – Kp                     |
+|       7 |     16 |   48 | Equilíbrios heterogêneos – Kp                     |
+|       7 |     17 |   49 | Deslocamento de equilíbrio                        |
+|       7 |     17 |   50 | Deslocamento de equilíbrio                        |
+|       7 |     17 |   51 | Lei da diluição de Ostwald                        |
+|       7 |     18 |   52 | Lei da diluição de Ostwald                        |
+|       7 |     18 |   53 | Produto iônico da água                            |
+|       7 |     18 |   54 | pH e pOH – Introdução                             |
+|       8 |     19 |   55 | pH e pOH                                          |
+|       8 |     19 |   56 | pH e pOH                                          |
+|       8 |     19 |   57 | Introdução à Química Orgânica                     |
+|       8 |     20 |   58 | Introdução à Química Orgânica                     |
+|       8 |     20 |   59 | Petróleo e combustão                              |
+|       8 |     20 |   60 | Nomenclatura de hidrocarbonetos                   |
+|       8 |     21 |   61 | Nomenclatura de hidrocarbonetos                   |
+|       8 |     21 |   62 | Nomenclatura básica de alguns compostos orgânicos |
+|       8 |     21 |   63 | Grupos orgânicos substituintes                    |
+|       8 |     22 |   64 | Nomenclatura de hidrocarbonetos ramificados       |
+|       8 |     22 |   65 | Nomenclatura de hidrocarbonetos ramificados       |
+|       8 |     22 |   66 | Álcoois, aldeídos e cetonas                       |
+|       8 |     23 |   67 | Ácidos, ésteres, éteres e aminas                  |
+|       8 |     23 |   68 | Ácidos, ésteres, éteres e aminas                  |
+|       8 |     23 |   69 | Sinopse das funções orgânicas                     |
+|       8 |     24 |   70 | Isomeria constitucional (plana)                   |
+|       8 |     24 |   71 | Isomeria geométrica (cis-trans)                   |
+|       8 |     24 |   72 | Isomeria óptica                                   |
+|---------+--------+------+---------------------------------------------------|
