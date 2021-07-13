@@ -39,7 +39,6 @@
 + Cálculos matemáticos de diluição e concentração de soluções e mistura de reações de solutos que não reagem entre si;
 + Mistura de Soluções de Solutos Diferentes que Reagem entre Si;
 + Titulação.
-
 * 2º bimestre
 ** Química A:
 *** Unidade1: Ácidos, bases, sais e óxidos;
@@ -115,21 +114,18 @@
   - Calor de combustão ou entalpia-padrão de combustão, 360;
   - Energia de ligação, 361;
 + Leis de Hess, 362.
-
 * 3º bimestre
 ** Química A:
 *** Unidade 1 Funções oxigenadas;
 *** Unidade 2 Funções nitrogenadas;
 *** Unidade 3 Isomeria constitucional e estereoisomeria;
 *** Unidade 4 Reações orgânicas: substituição e adição;
-
 ** Química B:
 *** Unidade 1 Cinética química;
 *** Unidade 2 Equilíbrios moleculares;
 *** Unidade 3 Deslocamento do equilíbrio químico;
 *** Unidade 4 Equilíbrios iônicos;
 *** Unidade 5 Equilíbrio iônico da água
-
 * 4º bimestre
 ** Química A:
 *** Unidade 1 Reações orgânicas: eliminação e oxidação;
