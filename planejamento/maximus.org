@@ -117,15 +117,72 @@
 * 3º bimestre
 ** Química A:
 *** Unidade 1 Funções oxigenadas;
++ Álcools e énois, 270;
++ Aldeídos, 272;
++ Cetona, 273;
++ Ácidos carboxílicos, 275;
++ Fenol, 276;
++ Éter, 278;
++ Ésteres, 279;
 *** Unidade 2 Funções nitrogenadas;
++ Aminas, 287;
++ Amidas, 290;
 *** Unidade 3 Isomeria constitucional e estereoisomeria;
++ Isomeria constitucionaly, 299;
+  - Isomeria constitucional e funcional, 299;
+  - Isomeria constitucional esqueletal, 300;
+  - Isomeria constitucional posicional, 301;
++ Esteroisomeria
+  - Diastereoisomeria, 302;
+  - Isomeria óptica, 304;
 *** Unidade 4 Reações orgânicas: substituição e adição;
++ Reações de substituição, 323;
+  - Halogenação em alcanos, 323;
+  - Halogenação em hidrocarbonetos aromáticos, 324;
+  - Nitração, 324;
+  - Sulfonação, 325;
+  - Alquilação de Friedel-Crafts, 325;
+  - Acilação de Friedel-Crafts, 325;
+  - Resumo das reações de substituição, 325;
++ Reações de adição, 326;
+  - Reações de adição em alcenos, 326;
+  - Reações de adição em alcinos, 327;
+  - Reações de adição em alcadienos, 328;
 ** Química B:
 *** Unidade 1 Cinética química;
++ Introdução, 338;
++ Determinação da rapidez com que uma reação ocorre, 339;
++ Condições para a ocorrência das reações químicas, 341;
++ Estudo gráfico, 342;
++ Fatores que influenciam a rapidez com que uma reação ocorre, 343;
+  - Estado físico dos reagentes , 343;
+  - Superfície de contato, 344;
+  - Temperatura, 344;
+  - Catalisador, 345;
+  - Inibidores, 346;
+  - Concentração dos reagentes e pressão, 346;
 *** Unidade 2 Equilíbrios moleculares;
++ Introdução, 357;
++ Constante de equilíbrio, Kc e Kp, 358;
+  - Relação entre Kc e Kp, 359;
+  - Grau de equilíbrio, 359;
 *** Unidade 3 Deslocamento do equilíbrio químico;
++ Variação da temperatura, 365;
++ Variação da pressão e do volume, 366;
++ Variação da concentração, 367;
++ Influência dos catalisadores no equilíbrio químico, 368;
 *** Unidade 4 Equilíbrios iônicos;
++ Introdução, 374;
++ Constante de equilíbrio, Ki e Kd, 375;
+  - Constante de equilíbrio de espécies que se dissociam ou se ionizam em etapas, 376;
++ Deslocamento do equilíbrio iônico, 377;
 *** Unidade 5 Equilíbrio iônico da água
++ Introdução, 383;
++ pH e pOH, 384;
+  - Soluções ácidas, 385;
+  - Soluções básicas ou alcalinas, 386;
+  - Soluções neutras, 386;
+  - Soluções-tampão, 387;
 * 4º bimestre
 ** Química A:
 *** Unidade 1 Reações orgânicas: eliminação e oxidação;
