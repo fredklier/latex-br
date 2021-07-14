@@ -1,0 +1,112 @@
+#+TITLE: Planejamento
+#+author: Fred Klier
+* Frente A
+|---------+--------+------+-----------------------------------------------------------------|
+| caderno | semana | aula | assunto                                                         |
+|---------+--------+------+-----------------------------------------------------------------|
+|       1 |      1 |    1 | Método científico                                               |
+|       1 |      1 |    2 | modelo atômico de Dalton e conceito inicial de elemento Químico |
+|       1 |      2 |    3 | Símbolos e fórmulas químicas                                    |
+|       1 |      2 |    4 | Substâncias simples, compostas e misturas                       |
+|       1 |        |    5 | Substâncias simples, compostas e misturas                       |
+|       1 |        |    6 | Transformações físicas e químicas. A equação química            |
+|       1 |        |    7 | Transformações físicas e químicas. A equação química            |
+|       1 |        |    8 | Primeira noção de balanceamento de equação química              |
+|       1 |        |    9 | Mudanças de estado físico e diagramas de aquecimento            |
+|       1 |        |   10 | Mudanças de estado físico e diagramas de aquecimento            |
+|       1 |        |   11 | Fases e componentes                                             |
+|       1 |        |   12 | Fases e componentes                                             |
+|       2 |        |   13 | Separação de misturas heterogêneas                              |
+|       2 |        |   14 | Separação de misturas heterogêneas                              |
+|       2 |        |   15 | Separação de misturas homogêneas                                |
+|       2 |        |   16 | Separação de misturas homogêneas                                |
+|       2 |        |   17 | Massa atômica de isótopo (M.A.)                                 |
+|       2 |        |   18 | Massa atômica de elemento químico (M.A.)                        |
+|       2 |        |   19 | Massa molecular (M.M.)                                          |
+|       2 |        |   20 | O mol e a constante de Avogadro                                 |
+|       2 |        |   21 | Massas molares (M)                                              |
+|       2 |        |   22 | Massas molares (M)                                              |
+|       2 |        |   23 | O modelo do gás ideal e as variáveis de estado de um gás        |
+|       2 |        |   24 | O modelo do gás ideal e as variáveis de estado de um gás        |
+|       3 |        |   25 | A transformação isotérmica                                      |
+|       3 |        |   26 | A transformação isovolumétrica                                  |
+|       3 |        |   27 | A transformação isobárica                                       |
+|       3 |        |   28 | A equação geral dos gases                                       |
+|       3 |        |   29 | A equação de estado do gás                                      |
+|       3 |        |   30 | A equação de estado do gás                                      |
+|       3 |        |   31 | A equação de estado e a hipótese de Avogadro                    |
+|       3 |        |   32 | A equação de estado e a hipótese de Avogadro                    |
+|       3 |        |   33 | Misturas gasosas: pressão parcial                               |
+|       3 |        |   34 | Misturas gasosas: pressão parcial                               |
+|       3 |        |   35 | Determinação de fórmula porcentual                              |
+|       3 |        |   36 | Determinação de fórmula mínima                                  |
+|       4 |        |   37 | Determinação de fórmula molecular                               |
+|       4 |        |   38 | Determinação de fórmula molecular                               |
+|       4 |        |   39 | As leis ponderais                                               |
+|       4 |        |   40 | As leis ponderais                                               |
+|       4 |        |   41 | Cálculos estequiométricos                                       |
+|       4 |        |   42 | Cálculos estequiométricos                                       |
+|       4 |        |   43 | Cálculos estequiométricos com reações consecutivas              |
+|       4 |        |   44 | Cálculos estequiométricos com rendimento de reações             |
+|       4 |        |   45 | Cálculos estequiométricos com reagente limitante                |
+|       4 |        |   46 | Cálculos estequiométricos com reagente limitante                |
+|       4 |        |   47 | Cálculos estequiométricos com pureza de reagente                |
+|       4 |        |   48 | Cálculos estequiométricos com pureza de reagente                |
+|---------+--------+------+-----------------------------------------------------------------|
+|         |        |      |                                                                 |
+
+* Frente B
+
+|---------+--------+------+-------------------------------------------------------------------------------------|
+| caderno | semana | aula | assunto                                                                             |
+|---------+--------+------+-------------------------------------------------------------------------------------|
+|       1 |      1 |    1 | Introdução à Química                                                                |
+|       1 |      1 |    2 | A evolução dos modelos atômicos                                                     |
+|       1 |      2 |    3 | Características atômicas                                                            |
+|       1 |      2 |    4 | Íons                                                                                |
+|       1 |      3 |    5 | Relações de semelhança entre elementos químicos                                     |
+|       1 |      3 |    6 | Relações de semelhança entre elementos químicos                                     |
+|       1 |      4 |    7 | Modelo atômico de Bohr                                                              |
+|       1 |      4 |    8 | Distribuições eletrônicas                                                           |
+|       1 |      5 |    9 | Distribuições eletrônicas                                                           |
+|       1 |      5 |   10 | A Tabela Periódica                                                                  |
+|       1 |      6 |   11 | A Tabela Periódica                                                                  |
+|       1 |      6 |   12 | Propriedades periódicas                                                             |
+|       1 |      7 |   13 | Propriedades periódicas                                                             |
+|       2 |      7 |   14 | Ligação iônica                                                                      |
+|       2 |      8 |   15 | Ligação iônica                                                                      |
+|       2 |      8 |   16 | Ligação covalente                                                                   |
+|       2 |      9 |   17 | Ligação covalente: construção de fórmulas eletrônicas a partir da fórmula molecular |
+|       2 |      9 |   18 | Ligação covalente: construção de fórmulas eletrônicas a partir da fórmula molecular |
+|       2 |     10 |   19 | Ligação metálica                                                                    |
+|       2 |     10 |   20 | Geometria molecular                                                                 |
+|       2 |     11 |   21 | Geometria molecular                                                                 |
+|       2 |     11 |   22 | Polaridade de ligações e moléculas                                                  |
+|       2 |     12 |   23 | Polaridade de ligações e moléculas                                                  |
+|       2 |     12 |   24 | Atrações intermoleculares                                                           |
+|       2 |     13 |   25 | Atrações intermoleculares                                                           |
+|       3 |     13 |   26 | Atrações intermoleculares e solubilidade                                            |
+|       3 |     14 |   27 | Atrações intermoleculares e solubilidade                                            |
+|       3 |     14 |   28 | Dissociação e ionização                                                             |
+|       3 |     15 |   29 | Dissociação e ionização                                                             |
+|       3 |     15 |   30 | Ácidos: nomenclatura e classificação                                                |
+|       3 |     16 |   31 | Ácidos: nomenclatura e classificação                                                |
+|       3 |     16 |   32 | Ácidos: propriedades químicas                                                       |
+|       3 |     17 |   33 | Bases ou hidróxidos                                                                 |
+|       3 |     17 |   34 | Bases ou hidróxidos                                                                 |
+|       3 |     18 |   35 | Sais: formulação e nomenclatura                                                     |
+|       3 |     18 |   36 | Sais: formulação e nomenclatura                                                     |
+|       4 |     19 |   37 | Reações de neutralização total                                                      |
+|       4 |     19 |   38 | Reações de neutralização total                                                      |
+|       4 |     20 |   39 | Óxidos e sua nomenclatura                                                           |
+|       4 |     20 |   40 | Óxidos básicos e neutros                                                            |
+|       4 |     21 |   41 | Óxidos ácidos                                                                       |
+|       4 |     21 |   42 | Óxidos ácidos                                                                       |
+|       4 |     22 |   43 | Propriedades e aplicações de alguns óxidos                                          |
+|       4 |     22 |   44 | Propriedades e aplicações de alguns óxidos                                          |
+|       4 |     23 |   45 | Tipos de reações                                                                    |
+|       4 |     23 |   46 | Condições para reações de deslocamento                                              |
+|       4 |     24 |   47 | Condições para reações de dupla-troca                                               |
+|       4 |     24 |   48 | Condições para reações de dupla-troca                                               |
+|---------+--------+------+-------------------------------------------------------------------------------------|
+|         |        |      |                                                                                     |

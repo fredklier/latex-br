@@ -12,12 +12,16 @@
 \usepackage{tabularx}
 \usepackage{chemfig}
 \usepackage[version=4]{mhchem}
-\usepackage{chemformula}
-\usepackage{xymtexpdf}%PDF Mode
+\usepackage{chemformula} %fórmula químicas com \ch
+\usepackage{elements} %para a distribuição eletrônica.
+\usepackage{xymtexpdf}%PDF Mode para moléculas complexas
 \usepackage{epic,carom} %pacote do colesterol
-\usepackage{xymtex}
-\usepackage{mathrsfs}
-
+\usepackage{xymtex} %desenha fórmulas químicas estruturais
+\usepackage{enumitem} %para trocar os rótulos dos itens
+\usepackage{siunitx} %para usar unidades do sistema intenacional
+\usepackage{mathrsfs} %letras para notações matemática
+\usepackage{xfrac} %para ter opções com frações (sfrac)
+\usepackage{rotating} %para rodar o texto
 
 \author{Fred Klier}
 \newcommand{\class}{Química}
@@ -82,30 +86,133 @@ Exercícios
 	\begin{questions}
 		
 	
-			\question Qual a Concentração de íons sulfato formados em uma solução 			de 1 litro com 0,1 mol de $BaSO_4 (K_s = 1,0 \cdot 10^{-10})$?
+			\question Qual a Concentração de íons sulfato formados em uma solução 			de 1 litro com 0,1 mol de \ce{BaSO4} $(K_s = 1,0 \times 10^{-10})$?
 			\begin{oneparchoices}
-					\choice $1,0 \cdot 10^{-2}$
-					\choice $1,0 \cdot 10^{-3}$
-					\choice $1,0 \cdot 10^{-4}$
-					\choice $1,0 \cdot 10^{-5}$
-					\choice $1,0 \cdot 10^{-6}$
+					\choice $1,0 \times 10^{-2}$
+					\choice $1,0 \times 10^{-3}$
+					\choice $1,0 \times 10^{-4}$
+					\choice $1,0 \times 10^{-5}$
+					\choice $1,0 \times 10^{-6}$
 			\end{oneparchoices}
 
-			\question Qual a Concentração de íons sulfato formados em uma solução 			de 1 litro com 1 mol de $Ca_3(PO_4)_2 (K_s = 1,0 \cdot 10^{-25})$?\\
+			\question Qual a Concentração de íons sulfato formados em uma solução 			de 1 litro com 1 mol de \ce{Ca3(PO4)2} $(K_s = 1,0 \times 10^{-25})$?\\
 				\begin{oneparchoices}
-						\choice $1,0 \cdot 10^{-6}$
-						\choice $1,0 \cdot 10^{-5}$
-						\choice $1,0 \cdot 10^{-4}$
-						\choice $1,0 \cdot 10^{-3}$
-						\choice $1,0 \cdot 10^{-2}$
+						\choice $1,0 \times 10^{-6}$
+						\choice $1,0 \times 10^{-5}$
+						\choice $1,0 \times 10^{-4}$
+						\choice $1,0 \times 10^{-3}$
+						\choice $1,0 \times 10^{-2}$
 				\end{oneparchoices}
 
-			\question Determine 
-			
-			\question mais uma questão.
+			\question Uma reação química atinge o equilíbrio químico quando:
+				\begin{enumerate}[label=\alph*)]
+				  \item ocorre simultaneamente nos sentidos direto e inverso.
+				  \item as velocidades das reações direta e inversa são iguais.
+				  \item os reagentes são totalmente consumidos.
+				  \item a temperatura do sistema é igual à do ambiente.
+				  \item a razão entre as concentrações de reatantes e produtos é unitária.
+				\end{enumerate}
+
+				\question Escreva a expressão da constante de equilíbrio em termos de concentração $(K_c)$ dos seguintes equilíbrios:
+				\begin{enumerate}[label=\alph*)]
+				  \item \ce{2 NO_{(g)} + O2_{(g)} <--> 2 NO2_{(g)}}
+				  \item \ce{PCl5_{(g)} <--> PCl3_{(g)}+ Cl2_{(g)}}
+				  \item \ce{4 HCl_{(g)} + O2_{(g)} <--> 2 H2O_{(g)} + 2 Cl2_{(g)}}
+				  \item \ce{C_{(s)} + H2O_{(g)} <--> CO_{(g)} + H2_{(g)}}
+				  \item \ce{Mg_{(s)} + 2 H^+_{(aq)} <--> Mg^{2+}_{(aq)} + H2_{(g)} }
+				  \item \ce{CrO4^{2–}_{(aq)} + 2 H^+_{(aq)} <--> Cr2O7^{2–}_{(aq)} + H2O_{(l)}}
+				\end{enumerate}
 		
-		
-		
-	\end{questions}	
+				\question Em determinadas condições de temperatura e pressão, existe 0,5 mol/L de \ce{N2O4} em equilíbrio com 2 mol/L de \ce{NO2}, segundo a equação \ce{N2O4_{(g)} <--> 2 NO2_{(g)}}. Qual o valor da constante $(K_c)$ desse equilíbrio, nas condições da experiência?
+				\makeemptybox{2cm}
+
+				\question São colocados 8,0 mol de amônia num recipiente fechado de 5,0 litros de capacidade. Acima de 450 $^{\circ}C$, estabelece-se, após algum tempo, o equilíbrio:
+				\begin{center}
+				  \ce{2NH3_{(g)} <--> 3H3_{(g)} + N2_{(g)}}
+				\end{center}
+				Sabendo que a variação do número de mol dos participantes está registrada no gráfico, podemos afirmar que,nestas condições, a constante de equilíbrio, Kc, é igual a:
+
+				\begin{center}
+\begin{tikzpicture}[scale=0.5]
+	\draw [<->] (0,6) -- (0,0) -- (7,0);
+	\draw[dotted] (0,0) grid [step=.5] (6.5,5.5);
+	\node [above] at (0,6) {$V_{(mol/L \cdot s)}$};
+	\node [left] at (0,1) {20};
+	\draw (-3pt,1) -- (3pt,1);
+	\node [left] at (0,2) {40};
+	\draw (-3pt,2) -- (3pt,2);
+	\node [left] at (0,3) {60};
+	\draw (-3pt,3) -- (3pt,3);
+	\node [left] at (0,4) {80};
+	\draw (-3pt,4) -- (3pt,4);
+	\node [left] at (0,5) {100};
+	\draw (-3pt,5) -- (3pt,5);
+	\node [below] at (7,0) {$T_{(s)}$};
+	\node [below] at (1,0) {10};
+	\draw (1,-3pt) -- (1,3pt);
+	\node [below] at (2,0) {20};
+	\draw (2,-3pt) -- (2,3pt);
+	\node [below] at (3,0) {30};
+	\draw (3,-3pt) -- (3,3pt);
+	\node [below] at (4,0) {40};
+	\draw (4,-3pt) -- (4,3pt);
+	\node [below] at (5,0) {50};
+	\draw (5,-3pt) -- (5,3pt);
+	\node [below] at (6,0) {60};
+	\draw (6,-3pt) -- (6,3pt);
+	\draw [very thick] (0,4) to [out=280,in=180] (4,2);
+	\draw[very thick] (4,2) -- (6.5,2);
+	\node [right] at (6.5,2) {\ce{NH3}};
+	\draw[very thick] (0,0) to [out=30,in=180] (4,1);
+	\draw[very thick] (4,1) -- (6.5,1);
+	\node [right] at (6.5,1) {\ce{N2}};
+	\draw[very thick] (0,0) to [out=70,in=180] (4,3);
+	\draw[very thick] (4,3) -- (6.5,3);
+	\node [right] at (6.5,3) {\ce{H2}};
+	\end{tikzpicture}
+				\end{center}
+				\makeemptybox{2cm}
+
+				\question Considere a seguinte equação de oxi-redução:
+				\begin{center}
+					\ce{Ce^{4+} + Fe^{2+} <--> Ce^{3+} + Fe^{3+}}
+				\end{center}
+				A constante de equilíbrio desta reação é igual a $2,0 \times 10^{11}$.
+				\begin{enumerate}[label=\alph*)]
+				\item Escreva a expressão que representa a constante de equilíbrio.
+					\makeemptybox{2cm}
+				\item calcule a concentração de íons \ce{Ce^{4+}} que existe em equilíbrio em uma solução cuja a concentração de \ce{Ce^{3+}} é 0,1 mol/L, de \ce{Fe^{3+}} é 0,1 mol/L e de \ce{Fe^{2+}} é 0,1 mol/L.
+					 \makeemptybox{2cm}
+				\end{enumerate}
+
+				\question Dois mol de \ce{CO_{(g)}} reagem com dois mol de \ce{NO2_{(g)}}, conforme a equação.
+				\begin{center}
+					\ce{CO_{(g)} + NO2_{(g)} <-->[1][2] CO2_{(g)} + NO_{(g)}} ($200^{\circ}C$)
+				\end{center}
+				Quando se estabelece o equilíbrio, verifica-se que \sfrac{3}{4} de cada um dos reagentes foram transformados em \ce{CO2_{(g)}} e \ce{NO_{(g)}}. A constante de equilíbrio para a reação é:
+				\makeemptybox{2cm}
+
+				\question Num recipiente de volume constante igual a 1,00 litro, inicialmente evacuado, foi introduzido 1,00 mol de pentacloreto de fósforo gasoso e puro. O recipiente foi mantido a $250^{\circ}C$ e no equilíbrio final foi verificada a existência de 0,47 mol de gás cloro. Qual será o valor aproximado da constante de equilíbrio ($K_c$) estabelecido dentro do cilíndro? Considere a seguinte equação química:
+				\begin{center}
+					\ce{PCl5_{(g)} <--> PCl3_{(g)} + Cl2_{(g)}}
+				\end{center}
+				\makeemptybox{2cm}
+
+
+				\question O equilíbrio gasoso \ce{N2O4 <--> 2 NO2} apresenta, a uma dada temperatura, constante de equilíbrio $K_C$ = 2. Nesta temperatura foram feitas duas misturas diferentes, A e B, cada uma acondicionada em recipiente fechado, isolado e distinto. As condições iniciais estão mostradas abaixo:
+				\begin{enumerate}
+				\item mistura A \ce{NO2} = $2\times 10^{-2}$ mol/L \ce{N2O4} = $2\times 10^{-4}$ mol/L
+				\item mistura B \ce{NO2} = $2\times 10^{-1}$ mol/L \ce{N2O4} = $1\times 10^{-3}$ mol/L
+					\end{enumerate}
+				\begin{enumerate}[label=\alph*.]
+					\item Efetue os cálculos necessários e conclua se a mistura A se encontra ou não em situação de equilíbrio.
+					\item Efetue os cálculos necessários e conclua se a mistura B se encontra ou não em situação de equilíbrio.
+				\end{enumerate}
+
+				\question
+
+
+
+\end{questions}
 \end{multicols}
 \end{document}

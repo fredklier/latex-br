@@ -1,0 +1,197 @@
+#+TITLE: Maximus
+#+author: Fred Klier
+
+* 1º bimestre
+** Química A:
+*** Unidade 1: Estrutura do átomo
++ Modelos atômicos;
++ Estudo do átomo;
++ Distribuição Eletrônica.
+*** Unidade 2: Tabela periódica
++ Organização da tabela periódica;
++ Propriedades dos elementos da tabela periódica;
+*** Unidade 3: Ligação iônica e ligação covalente
++ Ligação iônica;
++ Ligação covalente;
+*** Unidade 4: Polaridade e geometria molecular
++ Polaridade da ligação covalente;
++ Geometria molecular e polaridade da molécula.
+*** Unidade 5: Forças intermoleculares
++ Interações intermoleculares.
+
+** Química B:
+*** Unidade 1: Estudo e classificação da matéria
++ Estudos físicos da matéria e Mudanças de Estado Físico da Matéria;
++ Classificação da Matéria;
++ Transformações químicas da Matéria e Classificação dos Reações Químicas.
+*** Unidade 2: Separação de Misturas
++ Processos de Separação;
++ Processos físicos.
+*** Unidade 3: Estudo das Soluções
++ Classificação das soluções;
++ Coeficiente de Solubilidade.
+*** Unidade 4: Concentração das Soluções
++ Expressão das Concentrações das Soluções;
++ Concentração em massa e Densidade;
++ Porcentagem em massa ou volume e Concentração em Partes por Milhão;
++ Concentração em Quantidade de Matéria e Porcentagem em Mol.
+*** Unidade 5: Diluição, concentração e mistura de soluções
++ Cálculos matemáticos de diluição e concentração de soluções e mistura de reações de solutos que não reagem entre si;
++ Mistura de Soluções de Solutos Diferentes que Reagem entre Si;
++ Titulação.
+* 2º bimestre
+** Química A:
+*** Unidade1: Ácidos, bases, sais e óxidos;
++ ácidos;
+  - classificação, 262;
+  - propriedades, 264;
+  - nomenclatura, 264.
++ bases;
+  - classificação, 266;
+  - propriedades, 267;
+  - nomenclatura, 267.
++ sais
+  - nomenclatura, 268;
+  - classificação, 269;
+  - propriedades, 269.
++ óxidos,
+  - nomenclatura, 270;
+  - classificação, 271;
++ Teoria ácido-base de Brönsted-Lowry, 272;
+*** unidade 2 Reações inorgânicas;
++ Reações de síntese ou de adição, 284;
++ Reações de análise e decomposição, 284;
++ Reações de simples troca e deslocamento, 284;
++ Reações de dupla-troca, 285;
+*** unidade 3 Introdução à Química orgânica;
++ Compostos orgânicos, 292;
++ Postulados de Kekulé, 293;
++ Classificação dos átomos de carbonos na cadeia carbônicas, 293;
++ Classificação de cadeias carbônicas, 294;
+  - simplificação de cadeias carbônicas, 295;
++ Anel benzênico (ou anel aromático).
+*** unidade 4 Nomenclatura das cadeias carbônicas;
++ Principais grupos funcionais, 302;
++ Nomenclatura de cadeias ramificadas, 305;
+*** unidade 5 hidrocarbonetos e haletos orgânicos.
++ Hidrocarbonetos, 312;
+  - Aromáticos, 312;
+  - Alifáticos, 313;
+  - propriedades gerais dos hidrocarbonetos, 314;
++ Haletos orgânicos, 314;
+  - Propriedades gerais dos haletos orgânicos, 315.
+** Química B:
+*** unidade 1 Leis ponderais e fórmulas químicas;
++ Leis ponderais, 324;
+  - Lei de Lavoisier ou lei da conservação das massas, 324;
+  - Lei de Proust ou lei das proporções definidas, 324;
++ Lei volumétrica, 324;
++ Fórmulas químicas, 325
+*** unidade 2 Estudo dos gases;
++ Transformações de estado
+  - Transformação isobáricas, 333;
+  - Transformação isocórica ou isovolumétrica, 334;
+  - Transformação isotérmica, 335.
++ Equação geral dos gases e equação de Clapeyron, 336;
++ Misturas gasosas (pressão e volume parciais), 337;
+  - pressão parcial, 338;
+  - volume parcial, 338.
+*** unidade 3 Cálculo estequiométrico;
++ Balanceamento de equações químicas, 345;
++ Reagentes;
+  - pureza de materiais, 346;
+  - reagente em excesso, 346.
++ Rendimento, 347.
+*** unidade 4 termoquímica.
++ Quantidade de calor e caloria, 356;
++ Processos exotérmicos e processos endotérmicos, 357;
+  - processos exotérmicos, 357;
+  - processos endotérmicos, 358;
++ Entalpia, 359;
+  - Entalpia padrão, 359;
+  - entalpia e fase de agregração, 359;
+  - Calor de formação ou entalpia-padrão de formação, 359;
+  - Calor de combustão ou entalpia-padrão de combustão, 360;
+  - Energia de ligação, 361;
++ Leis de Hess, 362.
+* 3º bimestre
+** Química A:
+*** Unidade 1 Funções oxigenadas;
++ Álcools e énois, 270;
++ Aldeídos, 272;
++ Cetona, 273;
++ Ácidos carboxílicos, 275;
++ Fenol, 276;
++ Éter, 278;
++ Ésteres, 279;
+*** Unidade 2 Funções nitrogenadas;
++ Aminas, 287;
++ Amidas, 290;
+*** Unidade 3 Isomeria constitucional e estereoisomeria;
++ Isomeria constitucionaly, 299;
+  - Isomeria constitucional e funcional, 299;
+  - Isomeria constitucional esqueletal, 300;
+  - Isomeria constitucional posicional, 301;
++ Esteroisomeria
+  - Diastereoisomeria, 302;
+  - Isomeria óptica, 304;
+*** Unidade 4 Reações orgânicas: substituição e adição;
++ Reações de substituição, 323;
+  - Halogenação em alcanos, 323;
+  - Halogenação em hidrocarbonetos aromáticos, 324;
+  - Nitração, 324;
+  - Sulfonação, 325;
+  - Alquilação de Friedel-Crafts, 325;
+  - Acilação de Friedel-Crafts, 325;
+  - Resumo das reações de substituição, 325;
++ Reações de adição, 326;
+  - Reações de adição em alcenos, 326;
+  - Reações de adição em alcinos, 327;
+  - Reações de adição em alcadienos, 328;
+** Química B:
+*** Unidade 1 Cinética química;
++ Introdução, 338;
++ Determinação da rapidez com que uma reação ocorre, 339;
++ Condições para a ocorrência das reações químicas, 341;
++ Estudo gráfico, 342;
++ Fatores que influenciam a rapidez com que uma reação ocorre, 343;
+  - Estado físico dos reagentes , 343;
+  - Superfície de contato, 344;
+  - Temperatura, 344;
+  - Catalisador, 345;
+  - Inibidores, 346;
+  - Concentração dos reagentes e pressão, 346;
+*** Unidade 2 Equilíbrios moleculares;
++ Introdução, 357;
++ Constante de equilíbrio, Kc e Kp, 358;
+  - Relação entre Kc e Kp, 359;
+  - Grau de equilíbrio, 359;
+*** Unidade 3 Deslocamento do equilíbrio químico;
++ Variação da temperatura, 365;
++ Variação da pressão e do volume, 366;
++ Variação da concentração, 367;
++ Influência dos catalisadores no equilíbrio químico, 368;
+*** Unidade 4 Equilíbrios iônicos;
++ Introdução, 374;
++ Constante de equilíbrio, Ki e Kd, 375;
+  - Constante de equilíbrio de espécies que se dissociam ou se ionizam em etapas, 376;
++ Deslocamento do equilíbrio iônico, 377;
+*** Unidade 5 Equilíbrio iônico da água
++ Introdução, 383;
++ pH e pOH, 384;
+  - Soluções ácidas, 385;
+  - Soluções básicas ou alcalinas, 386;
+  - Soluções neutras, 386;
+  - Soluções-tampão, 387;
+* 4º bimestre
+** Química A:
+*** Unidade 1 Reações orgânicas: eliminação e oxidação;
+*** Unidade 2 Bioquímica;
+*** Unidade 3 Petróleo e polímeros;
+*** Unidade 4 radioatividade.
+** Química B:
+*** Unidade 1 Equilíbrio de solubilidade;
+*** Unidade 2 Propriedades coligativas;
+*** Unidade 3 Reações de oxirredução;
+*** Unidade 4 Eletroquímica: pilhas e baterias;
+*** Unidade 5 Eletroquímica: eletrólise
