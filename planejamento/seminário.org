@@ -1,0 +1,27 @@
+#+title: Seminário
+#+author: Fred Klier
+
+|------------------------+------|
+| grupo                  | tema |
+|------------------------+------|
+| Alana e Fernanda Alves |      |
+| Alcides e Fabrício     |      |
+| Fernanda e Vitória     |      |
+| Gustavo e Gabriel      |      |
+| Henrique e Kaíque      |      |
+| João e Luís Felipe     |      |
+| Maria Clara e Heloísa  |      |
+| Nabilly e Samilly      |      |
+| Karol e Fernando       |      |
+|------------------------+------|
+
+
+1. Hidrocarboneto
+2. Haletos
+3. Álcool e Enol
+4. Fenol
+5. Aldeído
+6. Cetona
+7. Ácido carboxílico
+8. Eter e ester
+9. Amina e amida
