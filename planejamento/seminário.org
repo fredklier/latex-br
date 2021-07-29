@@ -1,21 +1,21 @@
 #+title: Seminário
 #+author: Fred Klier
 
-|------------------------+------|
-| grupo                  | tema |
-|------------------------+------|
-| Alana e Fernanda Alves |      |
-| Alcides e Fabrício     |      |
-| Fernanda e Vitória     |      |
-| Gustavo e Gabriel      |      |
-| Henrique e Kaíque      |      |
-| João e Luís Felipe     |      |
-| Maria Clara e Heloísa  |      |
-| Nabilly e Samilly      |      |
-| Karol e Fernando       |      |
-|------------------------+------|
+|------------------------+-------------------|
+| grupo                  | tema              |
+|------------------------+-------------------|
+| Alcides e Fabrício     | Hidrocarboneto    |
+| Henrique e Kaíque      | Haletos           |
+| Alana e Fernanda Alves | Álcool e enol     |
+| Maria Clara e Heloísa  | Fenol             |
+| João e Luís Felipe     | Aldeídos          |
+| Fernanda e Vitória     | Cetona            |
+| Karol e Fernando       | Ácido carboxílico |
+| Gustavo e Gabriel      | Eter e ester      |
+| Nabilly e Samilly      | Amina e amida     |
+|------------------------+-------------------|
 
-
+03 10 05 09 11 13 01 06 12
 1. Hidrocarboneto
 2. Haletos
 3. Álcool e Enol
