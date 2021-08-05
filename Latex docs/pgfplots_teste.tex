@@ -82,7 +82,7 @@
 %%% Title, author, date
 
 \title{Using the \texttt{tikzpicture} Environment for Drawing Graphs in \LaTeX}
-\author{Bob Jones}
+\author{Fred Klier}
 \date{\today}
 
 \begin{document}
@@ -140,6 +140,16 @@ My awesome graph is shown in Figure~\ref{fig:my-awesome-graph}.
 	\end{tikzpicture}
 	\caption{My awesome graph.}
  	\label{fig:my-awesome-graph}
+
 \end{figure}
+\begin{tikzpicture}
+\begin{axis}[
+title=Inv. cum. normal,
+xlabel={$x$},
+ylabel={$y$},
+]
+\addplot [blue] plot coordinates {(0.2,0.4) (0.4,0.4)};
+\end{axis}
+\end{tikzpicture}
 
 \end{document}
